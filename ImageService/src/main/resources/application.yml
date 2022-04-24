@@ -1,0 +1,18 @@
+server:
+  port: 8100
+qiniu:
+  accessKey: KzK8R-WoPzmZxJYLHsDUjnUK2DKnhsKBHhOeBJVM
+  secretKey: qMDpw8obgKLZT46HMJXPh0t0OzOC5Vt7KEBzqGhu
+  bucket: xmuwwf-images
+  zone: up-cn-east-2.qiniup.com
+  domain: rau38waqa.bkt.clouddn.com
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 121.37.149.40:8848
+  application:
+    name: ImageService
+
+
+
