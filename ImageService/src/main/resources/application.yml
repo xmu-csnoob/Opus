@@ -1,11 +1,5 @@
 server:
-  port: 8100
-qiniu:
-  accessKey: KzK8R-WoPzmZxJYLHsDUjnUK2DKnhsKBHhOeBJVM
-  secretKey: qMDpw8obgKLZT46HMJXPh0t0OzOC5Vt7KEBzqGhu
-  bucket: xmuwwf-images
-  zone: up-cn-east-2.qiniup.com
-  domain: rau38waqa.bkt.clouddn.com
+  port: 12100
 spring:
   cloud:
     nacos:
@@ -13,6 +7,35 @@ spring:
         server-addr: 121.37.149.40:8848
   application:
     name: ImageService
+  datasource:
+    url: jdbc:mysql://123.60.75.90:3306/opus
+    username: root
+    password: XMUwwf@4288
+    driver-class-name: com.mysql.cj.jdbc.Driver
+qiniu:
+  accessKey: KzK8R-WoPzmZxJYLHsDUjnUK2DKnhsKBHhOeBJVM
+  secretKey: qMDpw8obgKLZT46HMJXPh0t0OzOC5Vt7KEBzqGhu
+  bucket: xmuwwf-images
+  zone: up-cn-east-2.qiniup.com
+  domain: rau38waqa.bkt.clouddn.com
+mybatis:
+  mapper-locations: classpath:/mapper/*xml
+  type-aliases-package: cn.edu.xmu.wwf.opus.imageservice.model
+  configuration:
+    map-underscore-to-camel-case: true
+rocketmq:
+  name-server: 121.37.149.40:9876
+  producer:
+    isOnOff: on
+    group: opus-image-group
+    groupName: opus-image-group
+    namesrvAddr: 121.37.149.40:9876
+    maxMessageSize: 4096
+    sendMsgTimeout: 3000
+    retryTimesWhenSendFailed: 2
+
+
+
 
 
 

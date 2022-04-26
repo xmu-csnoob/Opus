@@ -1,0 +1,35 @@
+server:
+  port: 12101
+feign:
+  client:
+    config:
+      defalt:
+        readTimeout: 60000
+        connectTimeout: 60000
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 121.37.149.40:8848
+  application:
+    name: ArtworkService
+  datasource:
+    url: jdbc:mysql://123.60.75.90:3306/opus
+    username: root
+    password: XMUwwf@4288
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:/mapper/*xml
+  type-aliases-package: cn.edu.xmu.wwf.opus.artworkservice.model
+  configuration:
+    map-underscore-to-camel-case: true
+rocketmq:
+  name-server: 121.37.149.40:9876
+  producer:
+    isOnOff: on
+    group: opus-artwork-group
+    groupName: opus-artwork-group
+    namesrvAddr: 121.37.149.40:9876
+    maxMessageSize: 4096
+    sendMsgTimeout: 3000
+    retryTimesWhenSendFailed: 2

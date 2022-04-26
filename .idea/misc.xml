@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/ImageService/pom.xml" />
+        <option value="$PROJECT_DIR$/ArtworkService/pom.xml" />
+        <option value="$PROJECT_DIR$/Common/pom.xml" />
       </list>
     </option>
   </component>
