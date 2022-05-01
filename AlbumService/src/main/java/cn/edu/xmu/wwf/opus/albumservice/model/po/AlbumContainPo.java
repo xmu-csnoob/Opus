@@ -4,7 +4,6 @@ import lombok.Data;
 
 @Data
 public class AlbumContainPo {
-    int id;
     int albumId;
     int artworkId;
 }

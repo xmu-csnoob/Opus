@@ -12,7 +12,7 @@ spring:
       discovery:
         server-addr: 121.37.149.40:8848
   application:
-    name: ArtworkService
+    name: CategoryService
   datasource:
     url: jdbc:mysql://123.60.75.90:3306/opus
     username: root

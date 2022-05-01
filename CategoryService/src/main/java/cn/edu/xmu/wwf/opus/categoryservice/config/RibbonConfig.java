@@ -1,4 +1,4 @@
-package cn.edu.xmu.wwf.opus.category.config;
+package cn.edu.xmu.wwf.opus.categoryservice.config;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

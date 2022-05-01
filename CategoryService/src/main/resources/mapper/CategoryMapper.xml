@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.xmu.wwf.opus.categoryservice.mapper.CategoryMapper">
+    <insert id="insertCategoryPo" parameterType="cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryPo">
+        INSERT INTO category (name) VALUES (#{name});
+    </insert>
+    <delete id="delCategoryPo" parameterType="java.lang.Integer">
+        DELETE FROM category where id=#{id};
+    </delete>
+    <insert id="insertCategoryContainPo" parameterType="cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryContainPo">
+        INSERT INTO category_contain(artwork_id, category_id) VALUES (#{artworkId},#{categoryId});
+    </insert>
+    <select id="selectCategoryPo" resultType="cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryPo">
+        SELECT * FROM category where id=#{id};
+    </select>
+    <select id="selectCategoryContainPo" resultType="cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryContainPo">
+        SELECT * FROM category_contain where artwork_id=#{artworkId} and category_id=#{categoryId};
+    </select>
+    <delete id="delCategoryContainPo">
+        DELETE FROM category_contain WHERE category_id=#{categoryId} and artwork_id=#{artworkId};
+    </delete>
+</mapper>
