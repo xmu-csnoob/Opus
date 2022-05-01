@@ -7,15 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ImageService" />
+        <module name="AlbumService" />
         <module name="ArtworkService" />
+        <module name="CategoryService" />
+        <module name="ImageService" />
         <module name="Common" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="AlbumService" options="-parameters" />
       <module name="ArtworkService" options="-parameters" />
+      <module name="CategoryService" options="-parameters" />
       <module name="Common" options="-parameters" />
       <module name="ImageService" options="-parameters" />
       <module name="Opus" options="-parameters" />

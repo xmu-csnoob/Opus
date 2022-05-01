@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.edu.xmu.wwf.opus.imageservice.mapper.ImageMapper">
+    <select id="selectById" parameterType="java.lang.Integer" resultType="cn.edu.xmu.wwf.opus.imageservice.model.po.ImagePo">
+        SELECT * FROM image WHERE id=#{id}
+    </select>
     <insert id="insertPo" keyProperty="id" useGeneratedKeys="true">
         INSERT INTO image(name,url)
         VALUES(#{name},#{url})

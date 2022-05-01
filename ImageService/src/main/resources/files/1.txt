@@ -1,0 +1,16 @@
+1.resis
+2.insurance
+3.JERRIZ
+4.25
+5.stadium
+6.park
+7.coffee
+8.leader
+9.route
+10.lights
+
+
+The chart shows how the pencentage of households(owned and rented acommodation) has changed in two regions of Britain from 1918 to 2011.
+As it is shown in the chart,households in owned accommodation features a decending trend in a peroid between 1918 and 2011,but it increased in 2011 unfortunately.
+
+ 

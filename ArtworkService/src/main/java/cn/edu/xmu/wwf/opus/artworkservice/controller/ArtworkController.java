@@ -1,13 +1,18 @@
 package cn.edu.xmu.wwf.opus.artworkservice.controller;
 
 import cn.edu.xmu.wwf.opus.artworkservice.microservice.ImgService;
+import cn.edu.xmu.wwf.opus.artworkservice.microservice.model.image.PostImageRetVo;
 import cn.edu.xmu.wwf.opus.artworkservice.model.vo.ArtworkPostVo;
 import cn.edu.xmu.wwf.opus.artworkservice.service.ArtworkService;
+import cn.edu.xmu.wwf.opus.artworkservice.utils.PageConfigUtil;
+import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
+import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+
 
 @Api(tags = "作品模块")
 @RestController
@@ -15,12 +20,52 @@ import org.springframework.web.multipart.MultipartFile;
 public class ArtworkController {
     @Autowired
     ArtworkService artworkService;
+    @Autowired
+    ImgService imgService;
     @ApiOperation("提交作品")
-    //, @RequestBody ArtworkPostVo artworkPostVo
-    @RequestMapping("")
-    public void addArtwork(@RequestPart("File") MultipartFile file,@RequestPart("Name") String name,@RequestPart("Category")String category) throws Throwable {
+    @PostMapping("")
+    public ReturnObject addArtwork(@RequestPart("File") MultipartFile file,@RequestPart("Name") String name,@RequestPart("Category")String category,@RequestPart("Introduction")String introduction) throws Throwable {
         int id=0;
-        artworkService.addArtwork(new ArtworkPostVo(id,file,name,category,""));
+        if(file.isEmpty()){
+            return new ReturnObject(ReturnNo.FILE_NOT_VALID,"上传文件为空");
+        }
+        String filename=file.getOriginalFilename();
+        assert filename != null;
+        String postfix=filename.split("\\.")[1];
+        if(!postfix.equals("png")&&!postfix.equals("jpg")&&!postfix.equals("jpeg")){
+            return new ReturnObject<>(ReturnNo.FILE_NOT_VALID,"上传的文件格式有误");
+        }
+        ReturnObject<PostImageRetVo> returnObject;
+        try{
+             returnObject=imgService.uploadImage(file,category);
+        }catch (Exception e){
+            return new ReturnObject(ReturnNo.INTERNAL_SERVER_ERROR,e.getMessage());
+        }
+        return artworkService.addArtwork(new ArtworkPostVo(id,returnObject.data.getId(),name,category,introduction,returnObject.data.getUrl()));
     }
-
+    @ApiOperation("作品上架")
+    @PutMapping("/{id}/on")
+    public ReturnObject onShelfArtwork(@PathVariable int id){
+        return artworkService.onShelfArtwork(id);
+    }
+    @ApiOperation("作品下架")
+    @PutMapping("/{id}/off")
+    public ReturnObject offShelfArtwork(@PathVariable int id){
+        return artworkService.offShelfArtwork(id);
+    }
+    @ApiOperation("根据关键词查询一个相关的Artwork List")
+    @GetMapping("")
+    public ReturnObject obscureSearch(@RequestParam String word,@RequestParam int page,@RequestParam int pageSize){
+        return artworkService.getPagedObscureSearchResults(word,new PageConfigUtil(page,pageSize));
+    }
+    @ApiOperation("根据用户id查询一个Artwork List")
+    @GetMapping("/users/{id}")
+    public ReturnObject getUserArtworks(@PathVariable int id,@RequestParam int page,@RequestParam int pageSize){
+        return artworkService.getPagedUserArtworkList(id,new PageConfigUtil(page,pageSize));
+    }
+    @ApiOperation("根据ArtworkId查询一个Artwork")
+    @GetMapping(value="/{id}",produces = "application/json;charset=UTF-8")
+    public ReturnObject getArtwork(@PathVariable int id){
+        return artworkService.getGetArtworkRetVo(id);
+    }
 }

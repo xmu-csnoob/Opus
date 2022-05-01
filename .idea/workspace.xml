@@ -4,62 +4,84 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/.gitignore" afterDir="false" />
+    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="2022-04-26: 增加Image、Common、Artwork模块，实现了image upload和artwork post的接口">
+      <change afterPath="$PROJECT_DIR$/AlbumService/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/AlbumServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/controller/AlbumController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/dao/AlbumDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/mapper/AlbumMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/microservice/ArtworkService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/microservice/model/GetArtWorkRetVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/model/po/AlbumContainPo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/model/po/AlbumPo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/model/vo/AlbumContainPostVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/model/vo/AlbumInfoRetVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/model/vo/AlbumPostVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/model/vo/AlbumPutVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/service/AlbumService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/resources/mapper/AlbumMapper.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ArtworkService/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ArtworkService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/ArtworkServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/config/RibbonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/controller/ArtworkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/dao/ArtworkDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/mapper/ArtworkMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/ImgService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/model/image/PostImageRetVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/model/po/ArtworkPo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/model/vo/ArtworkPostVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/mq/InsertArtworkTopicListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/service/ArtworkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/utils/RocketMQUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/resources/mapper/ArtworkMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/test/java/cn/edu/xmu/wwf/opus/artworkservice/ArtworkServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/java/cn/edu/xmu/wwf/opus/common/utils/ret/ReturnNo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/java/cn/edu/xmu/wwf/opus/common/utils/ret/ReturnObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/test/java/cn/edu/xmu/wwf/opus/common/CommonApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/dao/ImageDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/mapper/ImageMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/model/po/ImagePo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/model/vo/ImagePostVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/model/vo/ImageRetVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/mq/InsertImageTopicListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/service/ImageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/utils/RocketMQUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/mapper/ImageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/1.0.mdj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/logo/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/需求分析/用例图.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/静态建模/领域模型.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/model/image/GetImageUrlRetVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/model/vo/GetArtworkRetVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/utils/PageConfigUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CategoryService/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CategoryService/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CategoryService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CategoryService/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CategoryService/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CategoryService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/category/CategoryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/category/config/RibbonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/category/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/category/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/category/dao/CategoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/category/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CategoryService/src/test/java/cn/edu/xmu/wwf/opus/category/CategoryApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/model/vo/ImageUrlRetVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageService/src/test/java/cn/edu/xmu/wwf/opus/imageservice/UnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/controller/ArtworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/controller/ArtworkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/dao/ArtworkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/dao/ArtworkDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/mapper/ArtworkMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/mapper/ArtworkMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/ImgService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/ImgService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/model/image/PostImageRetVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/model/image/PostImageRetVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/model/po/ArtworkPo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/model/po/ArtworkPo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/model/vo/ArtworkPostVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/model/vo/ArtworkPostVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/mq/InsertArtworkTopicListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/mq/InsertArtworkTopicListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/service/ArtworkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/service/ArtworkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/utils/RocketMQUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/utils/RocketMQUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/resources/mapper/ArtworkMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/resources/mapper/ArtworkMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/test/java/cn/edu/xmu/wwf/opus/artworkservice/ArtworkServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/test/java/cn/edu/xmu/wwf/opus/artworkservice/UnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/cn/edu/xmu/wwf/opus/common/utils/ret/ReturnNo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/cn/edu/xmu/wwf/opus/common/utils/ret/ReturnNo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImageService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/ImageServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/ImageServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/controller/ImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/dao/ImageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/dao/ImageDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/mapper/ImageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/mapper/ImageMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/model/vo/ImageRetVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/model/vo/ImageRetVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/mq/InsertImageTopicListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/service/ImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/utils/RocketMQUtil.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ImageService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageService/src/main/resources/mapper/ImageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/resources/mapper/ImageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageService/src/test/java/cn/edu/xmu/wwf/opus/imageservice/ImageServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumService/src/test/java/cn/edu/xmu/wwf/opus/albumservice/UnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/1.0.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/documents/1.0.mdj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,23 +130,32 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="17" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ImageService/src/main/resources/files" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\39511\Desktop\Opus\ImageService\src\main\resources\files" />
+      <recent name="C:\Users\39511\Desktop\Opus\AlbumService\src\main\resources" />
+      <recent name="C:\Users\39511\Desktop\Opus\AlbumService\src\main\java\cn\edu\xmu\wwf\opus\albumservice" />
+      <recent name="C:\Users\39511\Desktop\Opus\CategoryService\src\main\java\cn\xmu\edu\wwf\opus\category" />
       <recent name="C:\Users\39511\Desktop\Opus" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\39511\Desktop\Opus\AlbumService\src\main\resources\mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.edu.xmu.wwf.opus.imageservice.mq" />
@@ -140,7 +171,93 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ImageServiceApplication">
+  <component name="RunManager" selected="JUnit.UnitTest (1)">
+    <configuration name="UnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArtworkService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.xmu.wwf.opus.artworkservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.edu.xmu.wwf.opus.artworkservice" />
+      <option name="MAIN_CLASS_NAME" value="cn.edu.xmu.wwf.opus.artworkservice.UnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitTest.getArtwork01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArtworkService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.xmu.wwf.opus.artworkservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.edu.xmu.wwf.opus.artworkservice" />
+      <option name="MAIN_CLASS_NAME" value="cn.edu.xmu.wwf.opus.artworkservice.UnitTest" />
+      <option name="METHOD_NAME" value="getArtwork01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitTest.getUserArtwork01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArtworkService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.xmu.wwf.opus.artworkservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.edu.xmu.wwf.opus.artworkservice" />
+      <option name="MAIN_CLASS_NAME" value="cn.edu.xmu.wwf.opus.artworkservice.UnitTest" />
+      <option name="METHOD_NAME" value="getUserArtwork01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitTest.obscureSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArtworkService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.xmu.wwf.opus.artworkservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.edu.xmu.wwf.opus.artworkservice" />
+      <option name="MAIN_CLASS_NAME" value="cn.edu.xmu.wwf.opus.artworkservice.UnitTest" />
+      <option name="METHOD_NAME" value="obscureSearch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitTest.onShelfArtwork03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArtworkService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.xmu.wwf.opus.artworkservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.edu.xmu.wwf.opus.artworkservice" />
+      <option name="MAIN_CLASS_NAME" value="cn.edu.xmu.wwf.opus.artworkservice.UnitTest" />
+      <option name="METHOD_NAME" value="onShelfArtwork03" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlbumServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="AlbumService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.xmu.wwf.opus.albumservice.AlbumServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArtworkServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ArtworkService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.xmu.wwf.opus.artworkservice.ArtworkServiceApplication" />
@@ -155,6 +272,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UnitTest (1)" />
+        <item itemvalue="JUnit.UnitTest.obscureSearch" />
+        <item itemvalue="JUnit.UnitTest.getArtwork01" />
+        <item itemvalue="JUnit.UnitTest.getUserArtwork01" />
+        <item itemvalue="JUnit.UnitTest.onShelfArtwork03" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -167,7 +293,16 @@
       <workItem from="1650797110304" duration="3739000" />
       <workItem from="1650852108623" duration="5617000" />
       <workItem from="1650873809768" duration="15517000" />
-      <workItem from="1650941737629" duration="17259000" />
+      <workItem from="1650941737629" duration="20727000" />
+      <workItem from="1650975914244" duration="11715000" />
+      <workItem from="1651033458204" duration="5442000" />
+      <workItem from="1651062461174" duration="9371000" />
+      <workItem from="1651109919738" duration="528000" />
+      <workItem from="1651125962505" duration="10173000" />
+      <workItem from="1651237924882" duration="4587000" />
+      <workItem from="1651242583877" duration="374000" />
+      <workItem from="1651326302676" duration="179000" />
+      <workItem from="1651375620642" duration="5447000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1650805639993</created>
@@ -183,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650805706996</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2022-04-26: 增加Image、Common、Artwork模块，实现了image upload和artwork post的接口">
+      <created>1650962571113</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1650962571113</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +334,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="2022-04-26: 增加Image、Common、Artwork模块，实现了image upload和artwork post的接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-04-26: 增加Image、Common、Artwork模块，实现了image upload和artwork post的接口" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

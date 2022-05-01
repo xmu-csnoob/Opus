@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.xmu.wwf.opus.albumservice.mapper.AlbumMapper">
+    <insert id="insertAlbumPo" parameterType="cn.edu.xmu.wwf.opus.albumservice.model.po.AlbumPo" keyProperty="id" useGeneratedKeys="true">
+        INSERT INTO album
+        (name, user_id, introduction) VALUES (#{name},#{userId},#{introduction})
+    </insert>
+    <insert id="insertAlbumContainPo" parameterType="cn.edu.xmu.wwf.opus.albumservice.model.po.AlbumContainPo">
+        INSERT INTO album_contain
+            (artwork_id, album_id) VALUES (#{artworkId},#{albumId})
+    </insert>
+    <select id="selectById" parameterType="java.lang.Integer" resultType="cn.edu.xmu.wwf.opus.albumservice.model.po.AlbumPo">
+        SELECT * FROM album where id=#{id}
+    </select>
+    <select id="selectArtworkIdsByAlbumId" parameterType="java.lang.Integer" resultType="cn.edu.xmu.wwf.opus.albumservice.model.po.AlbumContainPo">
+        SELECT * FROM album_contain where album_id=#{id}
+    </select>
+    <select id="selectAlbumContainPoByPrimaryKey" resultType="cn.edu.xmu.wwf.opus.albumservice.model.po.AlbumContainPo">
+        select * from album_contain where artwork_id=#{artworkId} and album_id=#{albumId};
+    </select>
+    <update id="updateByPo" parameterType="cn.edu.xmu.wwf.opus.albumservice.model.po.AlbumPo">
+        UPDATE album
+        <set>
+            <if test="name!=null">
+                name=#{name},
+            </if>
+            <if test="introduction!=null">
+                introduction=#{introduction},
+            </if>
+            <if test="isDeleted!=null">
+                is_deleted=#{isDeleted},
+            </if>
+        </set>
+        WHERE id=#{id}
+    </update>
+    <delete id="deleteAlbumContainPo" parameterType="java.lang.Integer">
+        DELETE FROM album_contain
+        where artwork_id=#{artworkId} and album_id=#{albumId}
+    </delete>
+</mapper>

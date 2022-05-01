@@ -4,8 +4,22 @@
     <select id="selectAll" resultType="java.util.ArrayList">
         select * from artwork;
     </select>
+    <select id="selectById" parameterType="java.lang.Integer" resultType="cn.edu.xmu.wwf.opus.artworkservice.model.po.ArtworkPo">
+        select * from artwork where id=#{id};
+    </select>
+    <select id="selectByUserId" parameterType="java.lang.Integer" resultType="cn.edu.xmu.wwf.opus.artworkservice.model.po.ArtworkPo">
+        select * from artwork where user_id=#{userId}
+    </select>
+    <select id="selectByKeyword" parameterType="java.lang.String" resultType="cn.edu.xmu.wwf.opus.artworkservice.model.po.ArtworkPo">
+        select * from artwork where name like #{keyword} or introduction like #{keyword}
+    </select>
     <insert id="insertPo" keyProperty="id" useGeneratedKeys="true">
-        INSERT INTO artwork(name, user_id, category_id, image_id)
-        VALUES(#{name},#{userId},#{categoryId},#{imageId})
+        INSERT INTO artwork(name, user_id, category_id, image_id,introduction)
+        VALUES(#{name},#{userId},#{categoryId},#{imageId},#{introduction})
     </insert>
+    <update id="alterState" parameterType="java.lang.Integer">
+        UPDATE artwork
+        SET state=#{state}
+        WHERE id=#{id};
+    </update>
 </mapper>

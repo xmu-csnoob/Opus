@@ -1,5 +1,11 @@
 server:
   port: 12100
+feign:
+  client:
+    config:
+      defalt:
+        readTimeout: 600000
+        connectTimeout: 600000
 spring:
   cloud:
     nacos:
@@ -8,7 +14,7 @@ spring:
   application:
     name: ImageService
   datasource:
-    url: jdbc:mysql://123.60.75.90:3306/opus
+    url: jdbc:mysql://123.60.75.90:3306/opus?useUnicode=true&characterEncoding=UTF-8
     username: root
     password: XMUwwf@4288
     driver-class-name: com.mysql.cj.jdbc.Driver

@@ -6,10 +6,10 @@ import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Component;
 
 @Component
-public class RocketMQUtil<T> {
+public class RocketMQUtil {
     @Autowired
     private RocketMQTemplate rocketMQTemplate;
-    public void sendMessage(String topic,T msg){
-        rocketMQTemplate.sendOneWay(topic, MessageBuilder.withPayload(msg).build());
+    public void sendMessage(String topic,String msg){
+        rocketMQTemplate.sendOneWay(topic, msg);
     }
 }

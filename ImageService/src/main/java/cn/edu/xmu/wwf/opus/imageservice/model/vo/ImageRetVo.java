@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 public class ImageRetVo {
+    int id;
     String name;
     String url;
     LocalDateTime uploadTime;

@@ -20,6 +20,9 @@
     <modules>
         <module>ImageService</module>
         <module>ArtworkService</module>
+        <module>Common</module>
+        <module>AlbumService</module>
+        <module>CategoryService</module>
     </modules>
 
     <build>

@@ -1,8 +1,10 @@
 package cn.edu.xmu.wwf.opus.imageservice.controller;
 
+import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
 import cn.edu.xmu.wwf.opus.imageservice.model.vo.ImagePostVo;
 import cn.edu.xmu.wwf.opus.imageservice.model.vo.ImageRetVo;
+import cn.edu.xmu.wwf.opus.imageservice.model.vo.ImageUrlRetVo;
 import cn.edu.xmu.wwf.opus.imageservice.service.ImageService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -20,10 +22,21 @@ public class ImageController {
     ImageService imageService;
     @ApiOperation("上传图像")
     @PostMapping("/{category}")
-    public ReturnObject<ImageRetVo> uploadImage(@RequestPart("file")MultipartFile file, @PathVariable String category)throws IOException {
+    public ReturnObject<ImageRetVo> uploadImage(@RequestPart MultipartFile file,@PathVariable String category)throws IOException {
+        if(file.isEmpty()){
+            return new ReturnObject<>(ReturnNo.FILE_NOT_VALID,"上传的文件是空文件");
+        }
+        String filename=file.getOriginalFilename();
+        assert filename != null;
+        String postfix=filename.split("\\.")[1];
+        if(!postfix.equals("png")&&!postfix.equals("jpg")&&!postfix.equals("jpeg")){
+            return new ReturnObject<>(ReturnNo.FILE_NOT_VALID,"上传的文件格式有误");
+        }
         return imageService.addImageToCos(new ImagePostVo(file,category));
     }
-    /*@GetMapping("/test")
-    public Object test(){
-    }*/
+    @ApiOperation("根据id查询name和url")
+    @GetMapping("/{id}")
+    public ReturnObject<ImageUrlRetVo> getImageInfo(@PathVariable int id){
+        return imageService.getUrlRetVo(id);
+    }
 }

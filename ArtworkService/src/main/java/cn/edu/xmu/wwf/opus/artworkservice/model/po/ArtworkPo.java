@@ -6,7 +6,9 @@ import lombok.Data;
 public class ArtworkPo {
     int id;
     String name;
+    String introduction;
     int userId;
     int imageId;
     int categoryId;
+    int state;
 }

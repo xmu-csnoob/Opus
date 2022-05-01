@@ -1,10 +1,10 @@
-package cn.edu.xmu.wwf.opus.artworkservice;
+package cn.edu.xmu.wwf.opus.category;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ArtworkServiceApplicationTests {
+class CategoryApplicationTests {
 
     @Test
     void contextLoads() {
