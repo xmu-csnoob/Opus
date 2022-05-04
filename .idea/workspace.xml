@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="2022-05-01: 完成了Category模块，编写并通过了单元测试">
-      <change afterPath="$PROJECT_DIR$/AlbumService/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlbumService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="2022-05-04: 删除relativePath">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -206,7 +204,7 @@
       <workItem from="1651375620642" duration="13965000" />
       <workItem from="1651416580543" duration="191000" />
       <workItem from="1651464431869" duration="2208000" />
-      <workItem from="1651578465342" duration="8573000" />
+      <workItem from="1651578465342" duration="8926000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1650805639993</created>
@@ -250,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651636468537</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2022-05-04: 删除relativePath">
+      <created>1651636830695</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1651636830695</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +268,8 @@
     <MESSAGE value="2022-05-01: 完善了Album Artwork Image三个模块 并设计通过了相应的单元测试" />
     <MESSAGE value="2022-05-01: 完成了Category模块，编写并通过了单元测试" />
     <MESSAGE value="2022-05-01: 通过了Artwork模块的单元测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-05-01: 通过了Artwork模块的单元测试" />
+    <MESSAGE value="2022-05-04: 删除relativePath" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-05-04: 删除relativePath" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
