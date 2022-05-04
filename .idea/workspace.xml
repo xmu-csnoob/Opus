@@ -4,27 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="2022-05-01: 完善了Album Artwork Image三个模块 并设计通过了相应的单元测试">
+    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="2022-05-01: 完成了Category模块，编写并通过了单元测试">
       <change afterPath="$PROJECT_DIR$/AlbumService/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AlbumService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/microservice/ArtworkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/microservice/model/GetArtWorkRetVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/model/po/CategoryContainPo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/model/po/CategoryPo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/model/vo/PostCategoryContainVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/model/vo/PostCategoryVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/model/po/AlbumContainPo.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/model/po/AlbumContainPo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/category/CategoryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/CategoryApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/category/config/RibbonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/config/RibbonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/category/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/category/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/category/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/dao/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/category/mapper/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/mapper/CategoryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/test/java/cn/edu/xmu/wwf/opus/category/CategoryApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/test/java/cn/edu/xmu/wwf/opus/categoryservice/UnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/controller/ArtworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/controller/ArtworkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/resources/mapper/ArtworkMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/resources/mapper/ArtworkMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/controller/ImageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,6 +208,9 @@
       <workItem from="1651242583877" duration="374000" />
       <workItem from="1651326302676" duration="179000" />
       <workItem from="1651375620642" duration="13965000" />
+      <workItem from="1651416580543" duration="191000" />
+      <workItem from="1651464431869" duration="2208000" />
+      <workItem from="1651578465342" duration="8198000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1650805639993</created>
@@ -250,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651390888185</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2022-05-01: 完成了Category模块，编写并通过了单元测试">
+      <created>1651416646367</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651416646367</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +258,8 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="2022-04-26: 增加Image、Common、Artwork模块，实现了image upload和artwork post的接口" />
     <MESSAGE value="2022-05-01: 完善了Album Artwork Image三个模块 并设计通过了相应的单元测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-05-01: 完善了Album Artwork Image三个模块 并设计通过了相应的单元测试" />
+    <MESSAGE value="2022-05-01: 完成了Category模块，编写并通过了单元测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-05-01: 完成了Category模块，编写并通过了单元测试" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

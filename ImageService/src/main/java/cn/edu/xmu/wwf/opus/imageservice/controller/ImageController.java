@@ -16,6 +16,7 @@ import java.io.IOException;
 
 @Api(tags = "图片")
 @RestController
+@CrossOrigin
 @RequestMapping("/image")
 public class ImageController {
     @Autowired

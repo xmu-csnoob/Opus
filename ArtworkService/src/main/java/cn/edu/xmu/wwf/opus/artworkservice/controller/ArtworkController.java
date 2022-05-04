@@ -16,6 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Api(tags = "作品模块")
 @RestController
+@CrossOrigin
 @RequestMapping("/artwork")
 public class ArtworkController {
     @Autowired
@@ -36,11 +37,7 @@ public class ArtworkController {
             return new ReturnObject<>(ReturnNo.FILE_NOT_VALID,"上传的文件格式有误");
         }
         ReturnObject<PostImageRetVo> returnObject;
-        try{
-             returnObject=imgService.uploadImage(file,category);
-        }catch (Exception e){
-            return new ReturnObject(ReturnNo.INTERNAL_SERVER_ERROR,e.getMessage());
-        }
+        returnObject=imgService.uploadImage(file,category);
         return artworkService.addArtwork(new ArtworkPostVo(id,returnObject.data.getId(),name,category,introduction,returnObject.data.getUrl()));
     }
     @ApiOperation("作品上架")

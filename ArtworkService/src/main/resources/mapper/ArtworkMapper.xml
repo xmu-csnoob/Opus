@@ -14,8 +14,8 @@
         select * from artwork where name like #{keyword} or introduction like #{keyword}
     </select>
     <insert id="insertPo" keyProperty="id" useGeneratedKeys="true">
-        INSERT INTO artwork(name, user_id, category_id, image_id,introduction)
-        VALUES(#{name},#{userId},#{categoryId},#{imageId},#{introduction})
+        INSERT INTO artwork(name, user_id, image_id,introduction)
+        VALUES(#{name},#{userId},#{imageId},#{introduction})
     </insert>
     <update id="alterState" parameterType="java.lang.Integer">
         UPDATE artwork

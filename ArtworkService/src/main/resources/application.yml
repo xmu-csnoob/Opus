@@ -9,6 +9,9 @@ feign:
       defalt:
         readTimeout: 600000
         connectTimeout: 600000
+ribbon:
+  ReadTimeout: 600000
+  ConnectTimeout: 600000
 spring:
   http:
     encoding:
