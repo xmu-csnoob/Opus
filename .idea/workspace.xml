@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="2022-05-04: 删除relativePath">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CategoryService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Common/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +100,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in ImageService">
+  <component name="RunManager" selected="Spring Boot.CategoryApplication">
     <configuration name="All in AlbumService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlbumService" />
       <option name="PACKAGE_NAME" value="" />
@@ -131,14 +133,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in Opus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Opus" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AlbumServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="AlbumService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.xmu.wwf.opus.albumservice.AlbumServiceApplication" />
@@ -153,6 +147,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CategoryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="CategoryService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.xmu.wwf.opus.categoryservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.xmu.wwf.opus.categoryservice.CategoryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ImageServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ImageService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.xmu.wwf.opus.imageservice.ImageServiceApplication" />
@@ -162,7 +169,6 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.UnitTests" />
-      <item itemvalue="JUnit.All in Opus" />
       <item itemvalue="JUnit.All in AlbumService" />
       <item itemvalue="JUnit.All in ArtworkService" />
       <item itemvalue="JUnit.All in CategoryService" />
@@ -170,14 +176,15 @@
       <item itemvalue="Spring Boot.AlbumServiceApplication" />
       <item itemvalue="Spring Boot.ArtworkServiceApplication" />
       <item itemvalue="Spring Boot.ImageServiceApplication" />
+      <item itemvalue="Spring Boot.CategoryApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CategoryApplication" />
         <item itemvalue="JUnit.All in ImageService" />
         <item itemvalue="JUnit.All in CategoryService" />
         <item itemvalue="JUnit.All in ArtworkService" />
         <item itemvalue="JUnit.All in AlbumService" />
-        <item itemvalue="JUnit.All in Opus" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +211,7 @@
       <workItem from="1651375620642" duration="13965000" />
       <workItem from="1651416580543" duration="191000" />
       <workItem from="1651464431869" duration="2208000" />
-      <workItem from="1651578465342" duration="8926000" />
+      <workItem from="1651578465342" duration="9885000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1650805639993</created>
@@ -255,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651636830695</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="2022-05-04: 删除relativePath">
+      <created>1651637221269</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1651637221269</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
