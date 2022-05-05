@@ -21,15 +21,6 @@ public class ImageDao {
         imageMapper.insertPo(imagePo);
         return imagePo;
     }
-    public void addImageToCache(ImagePo imagePo){
-        redisUtils.add(IMAGE_KEY_PREFIX+imagePo.getId(),imagePo);
-    }
-    public ImagePo getImageFromCache(int id){
-        return redisUtils.get(IMAGE_KEY_PREFIX+id);
-    }
-    public boolean isImageExistInCache(int id){
-        return redisUtils.hasKey(IMAGE_KEY_PREFIX+id);
-    }
     public ImagePo getImagePoFromDB(int id){
         return imageMapper.selectById(id);
     }
