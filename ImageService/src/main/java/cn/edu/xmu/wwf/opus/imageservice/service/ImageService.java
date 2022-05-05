@@ -39,17 +39,13 @@ public class ImageService {
             return new ReturnObject<>(ReturnNo.INTERNAL_SERVER_ERROR, "上传图片时发生未知错误");
         }
     }
-    public ReturnObject<ImageUrlRetVo> getUrlRetVo(int id){
-        ImagePo imagePo=new ImagePo();
-        if(!imageDao.isImageExistInCache(id)){
-            imagePo= imageDao.getImagePoFromDB(id);
-            if(imagePo==null){
-                return new ReturnObject<>(ReturnNo.RESOURCE_NOT_FOUND,"该图像id不存在");
-            }
-        }else{
-            imagePo=imageDao.getImageFromCache(id);
+    public ReturnObject<ImageUrlRetVo> getUrlRetVo(int id) {
+        ImagePo imagePo = new ImagePo();
+        imagePo = imageDao.getImagePoFromDB(id);
+        if (imagePo == null) {
+            return new ReturnObject<>(ReturnNo.RESOURCE_NOT_FOUND, "该图像id不存在");
         }
-        ImageUrlRetVo imageUrlRetVo=new ImageUrlRetVo();
+        ImageUrlRetVo imageUrlRetVo = new ImageUrlRetVo();
         imageUrlRetVo.setUrl(imagePo.getUrl());
         imageDao.addImageToCache(imagePo);
         return new ReturnObject<>(imageUrlRetVo);
