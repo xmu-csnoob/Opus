@@ -40,12 +40,18 @@ public class ImageService {
         }
     }
     public ReturnObject<ImageUrlRetVo> getUrlRetVo(int id){
-        ImagePo imagePo= imageDao.getImagePoFromDB(id);
-        if(imagePo==null){
-            return new ReturnObject<>(ReturnNo.RESOURCE_NOT_FOUND,"该图像id不存在");
+        ImagePo imagePo=new ImagePo();
+        if(!imageDao.isImageExistInCache(id)){
+            imagePo= imageDao.getImagePoFromDB(id);
+            if(imagePo==null){
+                return new ReturnObject<>(ReturnNo.RESOURCE_NOT_FOUND,"该图像id不存在");
+            }
+        }else{
+            imagePo=imageDao.getImageFromCache(id);
         }
         ImageUrlRetVo imageUrlRetVo=new ImageUrlRetVo();
         imageUrlRetVo.setUrl(imagePo.getUrl());
+        imageDao.addImageToCache(imagePo);
         return new ReturnObject<>(imageUrlRetVo);
     }
 }

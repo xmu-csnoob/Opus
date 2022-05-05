@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/utils/RedisUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/service/ArtworkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/service/ArtworkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/dao/ImageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/dao/ImageDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,8 +90,8 @@
       <recent name="C:\Users\39511\Desktop\Opus\AlbumService\src\main\resources\mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.edu.xmu.wwf.opus.imageservice.mq" />
       <recent name="cn.edu.xmu.wwf.opus.imageservice.utils" />
+      <recent name="cn.edu.xmu.wwf.opus.imageservice.mq" />
       <recent name="cn.edu.xmu.wwf.opus.artworkservice.util" />
       <recent name="cn.edu.xmu.wwf.opus.common.utils.rocketmq" />
     </key>
@@ -214,7 +217,7 @@
       <workItem from="1651578465342" duration="13047000" />
       <workItem from="1651649632820" duration="11000" />
       <workItem from="1651654312710" duration="13937000" />
-      <workItem from="1651742507381" duration="8115000" />
+      <workItem from="1651742507381" duration="9410000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1650805639993</created>
@@ -300,7 +303,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651752261667</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2022-05-04: 注释redis代码（仅测试用）">
+      <created>1651754136369</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1651754136369</updated>
+    </task>
+    <task id="LOCAL-00014" summary="2022-05-04: 取消注释redis代码（仅测试用）">
+      <created>1651754411292</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1651754411292</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +335,9 @@
     <MESSAGE value="2022-05-04: 修改Artwork和Image模块的部分接口，允许artwork挂在多个分类" />
     <MESSAGE value="2022-05-04: Category打包配置" />
     <MESSAGE value="2022-05-04: Artwork模块引入redis" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-05-04: Artwork模块引入redis" />
+    <MESSAGE value="2022-05-04: 注释redis代码（仅测试用）" />
+    <MESSAGE value="2022-05-04: 取消注释redis代码（仅测试用）" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-05-04: 取消注释redis代码（仅测试用）" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
