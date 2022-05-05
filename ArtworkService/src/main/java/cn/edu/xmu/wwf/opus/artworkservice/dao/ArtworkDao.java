@@ -5,6 +5,7 @@ import cn.edu.xmu.wwf.opus.artworkservice.microservice.CategoryService;
 import cn.edu.xmu.wwf.opus.artworkservice.model.po.ArtworkPo;
 import cn.edu.xmu.wwf.opus.artworkservice.model.vo.ArtworkPostVo;
 import cn.edu.xmu.wwf.opus.artworkservice.utils.PageConfigUtil;
+import cn.edu.xmu.wwf.opus.artworkservice.utils.RedisUtil;
 import cn.edu.xmu.wwf.opus.artworkservice.utils.RocketMQUtil;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
@@ -25,7 +26,18 @@ public class ArtworkDao {
     CategoryService categoryService;
     @Autowired
     RocketMQUtil rocketMQUtil;
-
+    @Autowired
+    RedisUtil<String,ArtworkPo> redisUtil;
+    static final String ARTWORK_KEY_PREFIX="artwork";
+    public boolean isKeyExistInCache(int id){
+        return redisUtil.hasKey(ARTWORK_KEY_PREFIX+id);
+    }
+    public void addArtworkIntoCache(ArtworkPo artworkPo){
+        redisUtil.add(ARTWORK_KEY_PREFIX+artworkPo.getId(),artworkPo);
+    }
+    public ArtworkPo getArtworkFromCache(int id){
+        return redisUtil.get(ARTWORK_KEY_PREFIX+id);
+    }
     public ReturnObject asyncAddArtworkIntoDB(ArtworkPostVo artworkPostVo){
         try{
             rocketMQUtil.sendMessage("insert-artwork-topic", JSON.toJSONString(artworkPostVo));
