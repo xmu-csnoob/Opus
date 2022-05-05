@@ -13,6 +13,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
+
 
 @Api(tags = "作品模块")
 @RestController
@@ -25,7 +27,7 @@ public class ArtworkController {
     ImgService imgService;
     @ApiOperation("提交作品")
     @PostMapping("")
-    public ReturnObject addArtwork(@RequestPart("File") MultipartFile file,@RequestPart("Name") String name,@RequestPart("Category")String category,@RequestPart("Introduction")String introduction) throws Throwable {
+    public ReturnObject addArtwork(@RequestPart("File") MultipartFile file, @RequestPart("Name") String name, @RequestPart("Category") List<Integer> categoryIds, @RequestPart("Introduction")String introduction) throws Throwable {
         int id=0;
         if(file.isEmpty()){
             return new ReturnObject(ReturnNo.FILE_NOT_VALID,"上传文件为空");
@@ -37,8 +39,8 @@ public class ArtworkController {
             return new ReturnObject<>(ReturnNo.FILE_NOT_VALID,"上传的文件格式有误");
         }
         ReturnObject<PostImageRetVo> returnObject;
-        returnObject=imgService.uploadImage(file,category);
-        return artworkService.addArtwork(new ArtworkPostVo(id,returnObject.data.getId(),name,category,introduction,returnObject.data.getUrl()));
+        returnObject=imgService.uploadImage(file);
+        return artworkService.addArtwork(new ArtworkPostVo(id,returnObject.data.getId(),name,categoryIds,introduction,returnObject.data.getUrl()));
     }
     @ApiOperation("作品上架")
     @PutMapping("/{id}/on")

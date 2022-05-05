@@ -1,6 +1,7 @@
 package cn.edu.xmu.wwf.opus.artworkservice.dao;
 
 import cn.edu.xmu.wwf.opus.artworkservice.mapper.ArtworkMapper;
+import cn.edu.xmu.wwf.opus.artworkservice.microservice.CategoryService;
 import cn.edu.xmu.wwf.opus.artworkservice.model.po.ArtworkPo;
 import cn.edu.xmu.wwf.opus.artworkservice.model.vo.ArtworkPostVo;
 import cn.edu.xmu.wwf.opus.artworkservice.utils.PageConfigUtil;
@@ -10,6 +11,7 @@ import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -20,7 +22,10 @@ public class ArtworkDao {
     @Autowired
     ArtworkMapper artworkMapper;
     @Autowired
+    CategoryService categoryService;
+    @Autowired
     RocketMQUtil rocketMQUtil;
+
     public ReturnObject asyncAddArtworkIntoDB(ArtworkPostVo artworkPostVo){
         try{
             rocketMQUtil.sendMessage("insert-artwork-topic", JSON.toJSONString(artworkPostVo));
@@ -31,12 +36,12 @@ public class ArtworkDao {
     }
     public ArtworkPo addArtworkIntoDB(ArtworkPostVo artworkPostVo){
         ArtworkPo artworkPo=new ArtworkPo();
-        artworkPo.setImageId(artworkPostVo.getImageId());
-        artworkPo.setUserId(artworkPostVo.getUserId());
-        artworkPo.setName(artworkPostVo.getName());
-        artworkPo.setIntroduction(artworkPostVo.getIntroduction());
-        artworkPo.setCategoryId(20);
+        BeanUtils.copyProperties(artworkPostVo,artworkPo);
         artworkMapper.insertPo(artworkPo);
+        List<Integer> categoryIds=artworkPostVo.getCategoryIds();
+        for(int id:categoryIds){
+            categoryService.addArtworkIntoCategory(id,artworkPo.getId());
+        }
         return artworkPo;
     }
     public ArtworkPo getArtworkByIdFromDB(int id){

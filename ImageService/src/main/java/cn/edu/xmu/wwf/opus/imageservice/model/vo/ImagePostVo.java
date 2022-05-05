@@ -8,5 +8,4 @@ import org.springframework.web.multipart.MultipartFile;
 @AllArgsConstructor
 public class ImagePostVo {
     MultipartFile multipartFile;
-    String category;
 }

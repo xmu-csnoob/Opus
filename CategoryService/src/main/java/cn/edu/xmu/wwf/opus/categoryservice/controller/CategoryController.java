@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @Api("类别模块")
 @RequestMapping("/category")
+@CrossOrigin
 public class CategoryController {
     @Autowired
     CategoryService categoryService;
@@ -40,5 +41,15 @@ public class CategoryController {
     @DeleteMapping("/{id}/artworks/{artworkId}")
     public ReturnObject removeArtworkFromCategory(@PathVariable int id,@PathVariable int artworkId){
         return categoryService.removeArtworkFromCategory(id,artworkId);
+    }
+    @ApiOperation("根据ArtworkId查询一个Category")
+    @GetMapping("/artwork/{artworkId}")
+    public ReturnObject getCategoryByArtworkId(@PathVariable int artworkId){
+        return categoryService.getCategoryInfoAboutArtwork(artworkId);
+    }
+    @ApiOperation("获取所有Category")
+    @GetMapping("")
+    public ReturnObject getAllCategory(){
+        return categoryService.getAllCategory();
     }
 }

@@ -26,10 +26,9 @@ public class ImageService {
 
     public ReturnObject<ImageRetVo> addImageToCos(ImagePostVo imagePostVo) throws IOException {
         MultipartFile file = imagePostVo.getMultipartFile();
-        String category = imagePostVo.getCategory();
         InputStream in = file.getInputStream();
         String filename = file.getOriginalFilename();
-        String key = category + "/" + TextUtils.generateFileName(filename);
+        String key =TextUtils.generateFileName(filename);
         try {
             String imageUrl = cosUtils.uploadImage(in, key);
             ImageRetVo imageRetVo = new ImageRetVo(0, filename, imageUrl, LocalDateTime.now());

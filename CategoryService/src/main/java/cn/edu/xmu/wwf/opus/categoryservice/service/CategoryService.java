@@ -5,6 +5,7 @@ import cn.edu.xmu.wwf.opus.categoryservice.microservice.ArtworkService;
 import cn.edu.xmu.wwf.opus.categoryservice.microservice.model.GetArtWorkRetVo;
 import cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryContainPo;
 import cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryPo;
+import cn.edu.xmu.wwf.opus.categoryservice.model.vo.GetCategoryVo;
 import cn.edu.xmu.wwf.opus.categoryservice.model.vo.PostCategoryContainVo;
 import cn.edu.xmu.wwf.opus.categoryservice.model.vo.PostCategoryVo;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
@@ -12,6 +13,9 @@ import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class CategoryService {
@@ -26,6 +30,16 @@ public class CategoryService {
         return new ReturnObject(categoryDao.addCategoryIntoDB(categoryPo));
     }
 
+    public ReturnObject getAllCategory(){
+        List<CategoryPo> categoryPos=categoryDao.selectAllCategoryFromDB();
+        List<GetCategoryVo> getCategoryVos=new ArrayList<>();
+        for(CategoryPo categoryPo:categoryPos){
+            GetCategoryVo getCategoryVo=new GetCategoryVo();
+            BeanUtils.copyProperties(categoryPo,getCategoryVo);
+            getCategoryVos.add(getCategoryVo);
+        }
+        return new ReturnObject(getCategoryVos);
+    }
     public ReturnObject removeCategory(int id) {
         CategoryPo categoryPo = categoryDao.selectCategoryFromDB(id);
         if (categoryPo == null) {
@@ -63,5 +77,20 @@ public class CategoryService {
             return new ReturnObject(ReturnNo.STATE_NOT_ALLOWED,"该作品不在该类别中");
         }
         return new ReturnObject(categoryDao.delCategotyContainFromDB(categoryId, artworkId));
+    }
+    public ReturnObject getCategoryInfoAboutArtwork(int artworkId){
+        List<CategoryContainPo> categoryContainPoList=categoryDao.selectCategoryContainsFromDB(artworkId);
+        System.out.println(categoryContainPoList.size());
+        if(categoryContainPoList.isEmpty()){
+            return new ReturnObject(ReturnNo.RESOURCE_NOT_FOUND,"该作品不属于任何一个类别");
+        }
+        List<GetCategoryVo> getCategoryVos=new ArrayList<>();
+        for(CategoryContainPo categoryContainPo:categoryContainPoList){
+            CategoryPo categoryPo=categoryDao.selectCategoryFromDB(categoryContainPo.getCategoryId());
+            GetCategoryVo getCategoryVo=new GetCategoryVo();
+            BeanUtils.copyProperties(categoryPo,getCategoryVo);
+            getCategoryVos.add(getCategoryVo);
+        }
+        return new ReturnObject(getCategoryVos);
     }
 }

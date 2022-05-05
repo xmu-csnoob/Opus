@@ -22,8 +22,8 @@ public class ImageController {
     @Autowired
     ImageService imageService;
     @ApiOperation("上传图像")
-    @PostMapping("/{category}")
-    public ReturnObject<ImageRetVo> uploadImage(@RequestPart MultipartFile file,@PathVariable String category)throws IOException {
+    @PostMapping("/")
+    public ReturnObject<ImageRetVo> uploadImage(@RequestPart MultipartFile file)throws IOException {
         if(file.isEmpty()){
             return new ReturnObject<>(ReturnNo.FILE_NOT_VALID,"上传的文件是空文件");
         }
@@ -33,7 +33,7 @@ public class ImageController {
         if(!postfix.equals("png")&&!postfix.equals("jpg")&&!postfix.equals("jpeg")){
             return new ReturnObject<>(ReturnNo.FILE_NOT_VALID,"上传的文件格式有误");
         }
-        return imageService.addImageToCos(new ImagePostVo(file,category));
+        return imageService.addImageToCos(new ImagePostVo(file));
     }
     @ApiOperation("根据id查询name和url")
     @GetMapping("/{id}")

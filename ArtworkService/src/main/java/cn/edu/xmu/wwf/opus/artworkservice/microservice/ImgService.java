@@ -5,14 +5,13 @@ import cn.edu.xmu.wwf.opus.artworkservice.microservice.model.image.PostImageRetV
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.MediaType;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 @FeignClient(value="ImageService")
 public interface ImgService {
-    @PostMapping(value = "/image/{category}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    ReturnObject<PostImageRetVo> uploadImage(@RequestPart("file")MultipartFile file,@PathVariable String category);
+    @PostMapping(value = "/image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    ReturnObject<PostImageRetVo> uploadImage(@RequestPart("file") MultipartFile file);
     @GetMapping("/image/{id}")
     ReturnObject<GetImageUrlRetVo> getImageInfo(@PathVariable int id);
 }

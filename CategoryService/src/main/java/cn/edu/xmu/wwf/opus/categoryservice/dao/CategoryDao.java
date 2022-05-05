@@ -6,6 +6,8 @@ import cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryPo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public class CategoryDao {
     @Autowired
@@ -29,5 +31,11 @@ public class CategoryDao {
     }
     public CategoryContainPo selectCategoryContainFromDB(int categoryId,int artworkId){
         return categoryMapper.selectCategoryContainPo(categoryId,artworkId);
+    }
+    public List<CategoryContainPo> selectCategoryContainsFromDB(int artworkId){
+        return categoryMapper.selectCategoryContainsByArtworkId(artworkId);
+    }
+    public List<CategoryPo> selectAllCategoryFromDB(){
+        return categoryMapper.selectAllCategoryPo();
     }
 }
