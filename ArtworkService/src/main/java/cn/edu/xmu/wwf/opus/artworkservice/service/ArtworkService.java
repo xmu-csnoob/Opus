@@ -53,22 +53,22 @@ public class ArtworkService {
         }
         return new ReturnObject(ReturnNo.RESOURCE_NOT_FOUND,"该作品id不存在");
     }
-    public ReturnObject getGetArtworkRetVo(int id){
-/*        if(!artworkDao.isKeyExistInCache(id)){*/
-            ArtworkPo artworkPo=artworkDao.getArtworkByIdFromDB(id);
-            if(artworkPo==null){
-                return new ReturnObject(ReturnNo.RESOURCE_NOT_FOUND,"作品id不存在");
+    public ReturnObject getGetArtworkRetVo(int id) {
+        if (!artworkDao.isKeyExistInCache(id)) {
+            ArtworkPo artworkPo = artworkDao.getArtworkByIdFromDB(id);
+            if (artworkPo == null) {
+                return new ReturnObject(ReturnNo.RESOURCE_NOT_FOUND, "作品id不存在");
             }
-            GetArtworkRetVo getArtworkRetVo=new GetArtworkRetVo();
-            BeanUtils.copyProperties(artworkPo,getArtworkRetVo);
+            GetArtworkRetVo getArtworkRetVo = new GetArtworkRetVo();
+            BeanUtils.copyProperties(artworkPo, getArtworkRetVo);
             artworkDao.addArtworkIntoCache(artworkPo);
             return new ReturnObject(getArtworkRetVo);
-/*        }else{
-            ArtworkPo artworkPo=artworkDao.getArtworkFromCache(id);
-            GetArtworkRetVo getArtworkRetVo=new GetArtworkRetVo();
-            BeanUtils.copyProperties(artworkPo,getArtworkRetVo);
+        } else {
+            ArtworkPo artworkPo = artworkDao.getArtworkFromCache(id);
+            GetArtworkRetVo getArtworkRetVo = new GetArtworkRetVo();
+            BeanUtils.copyProperties(artworkPo, getArtworkRetVo);
             return new ReturnObject(getArtworkRetVo);
-        }*/
+        }
 
     }
     public ReturnObject getPagedUserArtworkList(int userId,PageConfigUtil pageConfigUtil){
