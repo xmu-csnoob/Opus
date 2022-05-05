@@ -214,7 +214,7 @@
       <workItem from="1651578465342" duration="13047000" />
       <workItem from="1651649632820" duration="11000" />
       <workItem from="1651654312710" duration="13937000" />
-      <workItem from="1651742507381" duration="10172000" />
+      <workItem from="1651742507381" duration="10812000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1650805639993</created>
@@ -328,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651758813599</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="2022-05-04: Image模块集成redis">
+      <created>1651759177882</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1651759177882</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
