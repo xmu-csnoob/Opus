@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -244,7 +243,7 @@
       <workItem from="1651649632820" duration="11000" />
       <workItem from="1651654312710" duration="13937000" />
       <workItem from="1651742507381" duration="26792000" />
-      <workItem from="1651833504921" duration="3685000" />
+      <workItem from="1651833504921" duration="3945000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1650805639993</created>
@@ -428,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651836933908</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="2022-05-04: Login的Cookie设置为sameSite:None">
+      <created>1651837618849</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1651837618849</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +461,8 @@
     <MESSAGE value="2022-05-04: 删除父模块build配置" />
     <MESSAGE value="2022-05-04: small bugs" />
     <MESSAGE value="2022-05-04: Webconfig Cors修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-05-04: Webconfig Cors修改" />
+    <MESSAGE value="2022-05-04: Login的Cookie设置为sameSite:None" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-05-04: Login的Cookie设置为sameSite:None" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

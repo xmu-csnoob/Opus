@@ -35,9 +35,10 @@ public class UserService {
         }
         String token=generateToken(userPo);
         ResponseCookie cookie = ResponseCookie.from("token",token)
-                        .path("/")
-                                .sameSite("None")
-                                        .build();
+                .path("/")
+                .sameSite("None")
+                .secure(false)
+                .build();
         httpServletResponse.setHeader(HttpHeaders.SET_COOKIE,cookie.toString());
         return new ReturnObject(new UserLoginRetVo(true,token));
     }
