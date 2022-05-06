@@ -28,4 +28,12 @@ public class WebConfig implements WebMvcConfigurer {
                 .addPathPatterns("/user/**");
 //                表示取消对特定路径的拦截
     }
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                .allowedOrigins("*")
+                .allowCredentials(true)
+                .allowedMethods("GET", "POST", "DELETE", "PUT")
+                .maxAge(3600);
+    }
 }
