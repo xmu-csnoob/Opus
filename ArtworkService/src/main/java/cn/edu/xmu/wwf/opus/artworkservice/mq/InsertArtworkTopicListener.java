@@ -16,7 +16,6 @@ public class InsertArtworkTopicListener implements RocketMQListener<String> {
     @Override
     public void onMessage(String s) {
         ArtworkPostVo artworkPostVo= JSON.parseObject(s,ArtworkPostVo.class);
-        System.out.println("artworkPostVo = " + artworkPostVo);
         artworkDao.addArtworkIntoDB(artworkPostVo);
     }
 }

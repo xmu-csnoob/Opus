@@ -34,13 +34,6 @@ public class UserService {
             return new ReturnObject(ReturnNo.FORBIDDEN,"密码错误");
         }
         String token=generateToken(userPo);
-        ResponseCookie cookie = ResponseCookie.from("token",token)
-                .httpOnly(true)
-                .secure(true)
-                .path("/")
-                .sameSite("None")
-                .build();
-        httpServletResponse.setHeader(HttpHeaders.SET_COOKIE,cookie.toString());
         return new ReturnObject(new UserLoginRetVo(true,token));
     }
     public String generateToken(UserPo userPo){

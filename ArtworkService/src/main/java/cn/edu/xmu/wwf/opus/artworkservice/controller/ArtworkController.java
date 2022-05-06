@@ -28,7 +28,7 @@ public class ArtworkController {
     ImgService imgService;
     @ApiOperation("提交作品")
     @PostMapping("")
-    public ReturnObject addArtwork(@CookieValue("token") String token,@RequestPart("File") MultipartFile file, @RequestPart("Name") String name, @RequestPart("Category") List<Integer> categoryIds, @RequestPart("Introduction")String introduction) throws Throwable {
+    public ReturnObject addArtwork(@RequestHeader("token") String token,@RequestPart("File") MultipartFile file, @RequestPart("Name") String name, @RequestPart("Category") List<Integer> categoryIds, @RequestPart("Introduction")String introduction) throws Throwable {
         int id= Integer.parseInt(TokenDecodeUtil.get(token));
         if(file.isEmpty()){
             return new ReturnObject(ReturnNo.FILE_NOT_VALID,"上传文件为空");
