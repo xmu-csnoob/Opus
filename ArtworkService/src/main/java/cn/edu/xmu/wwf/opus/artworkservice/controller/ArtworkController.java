@@ -65,8 +65,7 @@ public class ArtworkController {
     }
     @ApiOperation("根据ArtworkId查询一个Artwork")
     @GetMapping(value="/{id}",produces = "application/json;charset=UTF-8")
-    public ReturnObject getArtwork(@PathVariable int id,@CookieValue("token") String token){
-        System.out.println(token);
+    public ReturnObject getArtwork(@PathVariable int id){
         return artworkService.getGetArtworkRetVo(id);
     }
 }
