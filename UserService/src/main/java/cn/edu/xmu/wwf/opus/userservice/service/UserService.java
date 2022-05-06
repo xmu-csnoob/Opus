@@ -11,6 +11,8 @@ import cn.edu.xmu.wwf.opus.userservice.model.vo.UserRegisterVo;
 import cn.edu.xmu.wwf.opus.userservice.util.TokenUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.ResponseCookie;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.Cookie;
@@ -32,9 +34,11 @@ public class UserService {
             return new ReturnObject(ReturnNo.FORBIDDEN,"密码错误");
         }
         String token=generateToken(userPo);
-        Cookie cookie = new Cookie("token", token);
-        cookie.setPath("/");
-        httpServletResponse.addCookie(cookie);
+        ResponseCookie cookie = ResponseCookie.from("token",token)
+                        .path("/")
+                                .sameSite("None")
+                                        .build();
+        httpServletResponse.setHeader(HttpHeaders.SET_COOKIE,cookie.toString());
         return new ReturnObject(new UserLoginRetVo(true,token));
     }
     public String generateToken(UserPo userPo){
