@@ -1,14 +1,11 @@
 package cn.edu.xmu.wwf.opus.albumservice.dao;
 
 import cn.edu.xmu.wwf.opus.albumservice.mapper.AlbumMapper;
-import cn.edu.xmu.wwf.opus.albumservice.model.po.AlbumContainPo;
 import cn.edu.xmu.wwf.opus.albumservice.model.po.AlbumPo;
 import cn.edu.xmu.wwf.opus.albumservice.model.vo.AlbumContainPostVo;
 import cn.edu.xmu.wwf.opus.albumservice.model.vo.AlbumPostVo;
 import cn.edu.xmu.wwf.opus.albumservice.model.vo.AlbumPutVo;
-import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
-import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
-import io.swagger.models.auth.In;
+import cn.edu.xmu.wwf.opus.albumservice.model.po.AlbumContainPo;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

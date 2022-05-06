@@ -1,0 +1,34 @@
+server:
+  port: 12345
+  servlet:
+    encoding:
+      charset: utf-8
+feign:
+  client:
+    config:
+      defalt:
+        readTimeout: 600000
+        connectTimeout: 600000
+ribbon:
+  ReadTimeout: 600000
+  ConnectTimeout: 600000
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 121.37.149.40:8848
+  http:
+    encoding:
+      charset: utf-8
+  application:
+    name: UserService
+  datasource:
+    url: jdbc:mysql://gz-cynosdbmysql-grp-2g3s6jwb.sql.tencentcdb.com:28229/opus?useUnicode=true&characterEncoding=UTF-8
+    username: test
+    password: 123456qQ
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:/mapper/*xml
+  type-aliases-package: cn.edu.xmu.wwf.opus.artworkservice.model
+  configuration:
+    map-underscore-to-camel-case: true

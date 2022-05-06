@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.xmu.wwf.opus.userservice.mapper.UserMapper">
+    <select id="selectUserPoByUsername" resultType="cn.edu.xmu.wwf.opus.userservice.model.po.UserPo">
+        SELECT * FROM user where name=#{name};
+    </select>
+    <insert id="insertUserPo" parameterType="cn.edu.xmu.wwf.opus.userservice.model.po.UserPo">
+        INSERT INTO user (name,password)VALUES (#{name},#{password});
+    </insert>
+    <select id="selectUserPoById" resultType="cn.edu.xmu.wwf.opus.userservice.model.po.UserPo">
+        SELECT * FROM user where id=#{id};
+    </select>
+</mapper>

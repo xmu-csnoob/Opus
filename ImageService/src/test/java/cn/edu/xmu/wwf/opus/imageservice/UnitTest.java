@@ -31,7 +31,7 @@ class UnitTest {
                 "multipart/form-data", inputStream);
         String responseStr=mvc.perform(
                 MockMvcRequestBuilders
-                        .multipart("/image/test")
+                        .multipart("/image")
                         .file(file1))
                 .andReturn().getResponse().getContentAsString();
         ReturnObject returnObject= JSON.parseObject(responseStr,ReturnObject.class);

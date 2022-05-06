@@ -11,6 +11,7 @@
         <module name="ArtworkService" />
         <module name="CategoryService" />
         <module name="ImageService" />
+        <module name="UserService" />
         <module name="Common" />
       </profile>
     </annotationProcessing>
@@ -23,6 +24,7 @@
       <module name="Common" options="-parameters" />
       <module name="ImageService" options="-parameters" />
       <module name="Opus" options="-parameters" />
+      <module name="UserService" options="-parameters" />
     </option>
   </component>
 </project>

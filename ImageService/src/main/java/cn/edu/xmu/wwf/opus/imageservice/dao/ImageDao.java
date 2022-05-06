@@ -13,8 +13,7 @@ public class ImageDao {
     @Autowired
     ImageMapper imageMapper;
     @Autowired
-    RedisUtils<String,ImagePo> redisUtils;
-    static final String IMAGE_KEY_PREFIX="image-";
+    RedisUtils<String, ImagePo> redisUtils;
     public ImagePo addImageToDB(ImageRetVo imageRetVo){
         ImagePo imagePo=new ImagePo();
         BeanUtils.copyProperties(imageRetVo,imagePo);

@@ -1,18 +1,17 @@
 package cn.edu.xmu.wwf.opus.albumservice.service;
 
 import cn.edu.xmu.wwf.opus.albumservice.dao.AlbumDao;
-import cn.edu.xmu.wwf.opus.albumservice.microservice.model.GetArtWorkRetVo;
-import cn.edu.xmu.wwf.opus.albumservice.microservice.ArtworkService;
-import cn.edu.xmu.wwf.opus.albumservice.model.po.AlbumContainPo;
 import cn.edu.xmu.wwf.opus.albumservice.model.po.AlbumPo;
 import cn.edu.xmu.wwf.opus.albumservice.model.vo.AlbumContainPostVo;
 import cn.edu.xmu.wwf.opus.albumservice.model.vo.AlbumInfoRetVo;
 import cn.edu.xmu.wwf.opus.albumservice.model.vo.AlbumPostVo;
 import cn.edu.xmu.wwf.opus.albumservice.model.vo.AlbumPutVo;
+import cn.edu.xmu.wwf.opus.albumservice.microservice.model.GetArtWorkRetVo;
+import cn.edu.xmu.wwf.opus.albumservice.microservice.ArtworkService;
+import cn.edu.xmu.wwf.opus.albumservice.model.po.AlbumContainPo;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.BeanClassLoaderAware;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

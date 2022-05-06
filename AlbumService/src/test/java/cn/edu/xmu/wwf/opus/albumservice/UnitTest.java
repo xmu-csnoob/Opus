@@ -1,6 +1,5 @@
 package cn.edu.xmu.wwf.opus.albumservice;
 
-import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
 import com.alibaba.fastjson.JSON;
 import org.junit.jupiter.api.Test;

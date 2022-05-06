@@ -2,20 +2,15 @@ package cn.edu.xmu.wwf.opus.artworkservice.service;
 
 import cn.edu.xmu.wwf.opus.artworkservice.dao.ArtworkDao;
 import cn.edu.xmu.wwf.opus.artworkservice.microservice.ImgService;
-import cn.edu.xmu.wwf.opus.artworkservice.microservice.model.image.GetImageUrlRetVo;
 import cn.edu.xmu.wwf.opus.artworkservice.model.po.ArtworkPo;
 import cn.edu.xmu.wwf.opus.artworkservice.model.vo.ArtworkPostVo;
 import cn.edu.xmu.wwf.opus.artworkservice.model.vo.GetArtworkRetVo;
 import cn.edu.xmu.wwf.opus.artworkservice.utils.PageConfigUtil;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
-import io.swagger.models.auth.In;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Service
 public class ArtworkService {

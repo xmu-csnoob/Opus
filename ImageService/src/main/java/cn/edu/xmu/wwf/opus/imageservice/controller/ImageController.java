@@ -1,9 +1,9 @@
 package cn.edu.xmu.wwf.opus.imageservice.controller;
 
-import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
-import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
 import cn.edu.xmu.wwf.opus.imageservice.model.vo.ImagePostVo;
 import cn.edu.xmu.wwf.opus.imageservice.model.vo.ImageRetVo;
+import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
+import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
 import cn.edu.xmu.wwf.opus.imageservice.model.vo.ImageUrlRetVo;
 import cn.edu.xmu.wwf.opus.imageservice.service.ImageService;
 import io.swagger.annotations.Api;
@@ -22,7 +22,7 @@ public class ImageController {
     @Autowired
     ImageService imageService;
     @ApiOperation("上传图像")
-    @PostMapping("/")
+    @PostMapping("")
     public ReturnObject<ImageRetVo> uploadImage(@RequestPart MultipartFile file)throws IOException {
         if(file.isEmpty()){
             return new ReturnObject<>(ReturnNo.FILE_NOT_VALID,"上传的文件是空文件");

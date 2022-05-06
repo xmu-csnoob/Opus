@@ -1,10 +1,11 @@
 package cn.edu.xmu.wwf.opus.artworkservice.controller;
 
-import cn.edu.xmu.wwf.opus.artworkservice.microservice.ImgService;
 import cn.edu.xmu.wwf.opus.artworkservice.microservice.model.image.PostImageRetVo;
 import cn.edu.xmu.wwf.opus.artworkservice.model.vo.ArtworkPostVo;
 import cn.edu.xmu.wwf.opus.artworkservice.service.ArtworkService;
+import cn.edu.xmu.wwf.opus.artworkservice.microservice.ImgService;
 import cn.edu.xmu.wwf.opus.artworkservice.utils.PageConfigUtil;
+import cn.edu.xmu.wwf.opus.common.utils.jwt.TokenDecodeUtil;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
 import io.swagger.annotations.Api;
@@ -27,8 +28,8 @@ public class ArtworkController {
     ImgService imgService;
     @ApiOperation("提交作品")
     @PostMapping("")
-    public ReturnObject addArtwork(@RequestPart("File") MultipartFile file, @RequestPart("Name") String name, @RequestPart("Category") List<Integer> categoryIds, @RequestPart("Introduction")String introduction) throws Throwable {
-        int id=0;
+    public ReturnObject addArtwork(@CookieValue("token") String token,@RequestPart("File") MultipartFile file, @RequestPart("Name") String name, @RequestPart("Category") List<Integer> categoryIds, @RequestPart("Introduction")String introduction) throws Throwable {
+        int id= Integer.parseInt(TokenDecodeUtil.get(token));
         if(file.isEmpty()){
             return new ReturnObject(ReturnNo.FILE_NOT_VALID,"上传文件为空");
         }
@@ -64,7 +65,8 @@ public class ArtworkController {
     }
     @ApiOperation("根据ArtworkId查询一个Artwork")
     @GetMapping(value="/{id}",produces = "application/json;charset=UTF-8")
-    public ReturnObject getArtwork(@PathVariable int id){
+    public ReturnObject getArtwork(@PathVariable int id,@CookieValue("token") String token){
+        System.out.println(token);
         return artworkService.getGetArtworkRetVo(id);
     }
 }

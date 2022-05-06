@@ -1,7 +1,7 @@
 package cn.edu.xmu.wwf.opus.albumservice.mapper;
 
-import cn.edu.xmu.wwf.opus.albumservice.model.po.AlbumContainPo;
 import cn.edu.xmu.wwf.opus.albumservice.model.po.AlbumPo;
+import cn.edu.xmu.wwf.opus.albumservice.model.po.AlbumContainPo;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

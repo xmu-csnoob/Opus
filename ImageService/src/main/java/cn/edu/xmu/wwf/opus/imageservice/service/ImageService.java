@@ -1,14 +1,14 @@
 package cn.edu.xmu.wwf.opus.imageservice.service;
 
-import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
-import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
 import cn.edu.xmu.wwf.opus.imageservice.dao.ImageDao;
 import cn.edu.xmu.wwf.opus.imageservice.model.po.ImagePo;
 import cn.edu.xmu.wwf.opus.imageservice.model.vo.ImagePostVo;
 import cn.edu.xmu.wwf.opus.imageservice.model.vo.ImageRetVo;
-import cn.edu.xmu.wwf.opus.imageservice.model.vo.ImageUrlRetVo;
 import cn.edu.xmu.wwf.opus.imageservice.utils.CosUtils;
 import cn.edu.xmu.wwf.opus.imageservice.utils.TextUtils;
+import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
+import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
+import cn.edu.xmu.wwf.opus.imageservice.model.vo.ImageUrlRetVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -28,7 +28,7 @@ public class ImageService {
         MultipartFile file = imagePostVo.getMultipartFile();
         InputStream in = file.getInputStream();
         String filename = file.getOriginalFilename();
-        String key =TextUtils.generateFileName(filename);
+        String key = TextUtils.generateFileName(filename);
         try {
             String imageUrl = cosUtils.uploadImage(in, key);
             ImageRetVo imageRetVo = new ImageRetVo(0, filename, imageUrl, LocalDateTime.now());

@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:mysql://123.60.75.90:3306/opus</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="opus@gz-cynosdbmysql-grp-2g3s6jwb.sql.tencentcdb.com" uuid="3c29ce99-87c0-4c1b-a39f-e6d6228df9fd">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://gz-cynosdbmysql-grp-2g3s6jwb.sql.tencentcdb.com:28229/opus</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

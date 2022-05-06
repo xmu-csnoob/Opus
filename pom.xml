@@ -22,6 +22,7 @@
         <module>Common</module>
         <module>AlbumService</module>
         <module>CategoryService</module>
+        <module>UserService</module>
     </modules>
 
     <build>

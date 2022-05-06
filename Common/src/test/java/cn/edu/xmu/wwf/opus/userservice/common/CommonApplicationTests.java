@@ -1,4 +1,4 @@
-package cn.edu.xmu.wwf.opus.common;
+package cn.edu.xmu.wwf.opus.userservice.common;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

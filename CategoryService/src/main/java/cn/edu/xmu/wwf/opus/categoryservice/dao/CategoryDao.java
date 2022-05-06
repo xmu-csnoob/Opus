@@ -1,8 +1,8 @@
 package cn.edu.xmu.wwf.opus.categoryservice.dao;
 
 import cn.edu.xmu.wwf.opus.categoryservice.mapper.CategoryMapper;
-import cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryContainPo;
 import cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryPo;
+import cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryContainPo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
