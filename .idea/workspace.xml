@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -233,7 +231,7 @@
       <workItem from="1651578465342" duration="13047000" />
       <workItem from="1651649632820" duration="11000" />
       <workItem from="1651654312710" duration="13937000" />
-      <workItem from="1651742507381" duration="25875000" />
+      <workItem from="1651742507381" duration="26423000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1650805639993</created>
@@ -396,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651819783290</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="2022-05-04: Webconfig Cors修改">
+      <created>1651820939987</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1651820939987</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,7 +427,8 @@
     <MESSAGE value="2022-05-04: 删除common模块build配置" />
     <MESSAGE value="2022-05-04: 删除父模块build配置" />
     <MESSAGE value="2022-05-04: small bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-05-04: small bugs" />
+    <MESSAGE value="2022-05-04: Webconfig Cors修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-05-04: Webconfig Cors修改" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

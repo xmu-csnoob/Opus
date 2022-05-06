@@ -25,7 +25,7 @@ public class WebConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(authenticationInterceptor())
 //                表示拦截所有请求
-                .addPathPatterns("/user/**");
+                .addPathPatterns("/user/secure/**");
 //                表示取消对特定路径的拦截
     }
     @Override
