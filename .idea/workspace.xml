@@ -4,67 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/model/user/GetUserInfoVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/java/cn/edu/xmu/wwf/opus/common/utils/jwt/TokenDecodeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/UserServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/config/RibbonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/interceptor/AuthenticationInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/model/po/UserPo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/model/vo/GetUserRetVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/model/vo/UserLoginRetVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/model/vo/UserLoginVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/model/vo/UserRegisterVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/util/TokenUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/test/java/cn/edu/xmu/wwf/opus/userservice/UserServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/dao/AlbumDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/dao/AlbumDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/mapper/AlbumMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/mapper/AlbumMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/microservice/ArtworkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/microservice/ArtworkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/service/AlbumService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumService/src/main/java/cn/edu/xmu/wwf/opus/albumservice/service/AlbumService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumService/src/test/java/cn/edu/xmu/wwf/opus/albumservice/UnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumService/src/test/java/cn/edu/xmu/wwf/opus/albumservice/UnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/controller/ArtworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/controller/ArtworkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/dao/ArtworkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/dao/ArtworkDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/ImgService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/ImgService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/service/ArtworkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/service/ArtworkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArtworkService/src/test/java/cn/edu/xmu/wwf/opus/artworkservice/UnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/test/java/cn/edu/xmu/wwf/opus/artworkservice/UnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/CategoryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/CategoryApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/dao/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/test/java/cn/edu/xmu/wwf/opus/categoryservice/UnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/test/java/cn/edu/xmu/wwf/opus/categoryservice/UnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/src/main/java/cn/edu/xmu/wwf/opus/common/utils/ret/ReturnNo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/cn/edu/xmu/wwf/opus/common/utils/ret/ReturnNo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/src/test/java/cn/edu/xmu/wwf/opus/common/CommonApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/test/java/cn/edu/xmu/wwf/opus/userservice/common/CommonApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/ImageServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/ImageServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/controller/ImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/dao/ImageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/dao/ImageDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/service/ImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageService/src/test/java/cn/edu/xmu/wwf/opus/imageservice/UnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/test/java/cn/edu/xmu/wwf/opus/imageservice/UnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -291,7 +231,7 @@
       <workItem from="1651578465342" duration="13047000" />
       <workItem from="1651649632820" duration="11000" />
       <workItem from="1651654312710" duration="13937000" />
-      <workItem from="1651742507381" duration="23833000" />
+      <workItem from="1651742507381" duration="24156000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1650805639993</created>
@@ -426,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651760394335</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="2022-05-04: 增加UserService模块">
+      <created>1651818871193</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1651818871193</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,7 +395,8 @@
     <MESSAGE value="2022-05-04: 取消注释redis代码（仅测试用）" />
     <MESSAGE value="2022-05-04: Image模块集成redis" />
     <MESSAGE value="2022-05-04: 删除Image模块对redis的集成" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-05-04: 删除Image模块对redis的集成" />
+    <MESSAGE value="2022-05-04: 增加UserService模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-05-04: 增加UserService模块" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
