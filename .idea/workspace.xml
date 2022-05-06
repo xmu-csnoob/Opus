@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="" />
+    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/controller/ArtworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/controller/ArtworkController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +104,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UnitTest.postImage01">
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication (1)">
     <configuration name="All in ArtworkService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtworkService" />
       <option name="PACKAGE_NAME" value="" />
@@ -177,6 +180,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="UserService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.xmu.wwf.opus.userservice.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="UserService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.userservice.UserServiceApplication" />
@@ -189,11 +199,13 @@
       <item itemvalue="JUnit.All in ArtworkService" />
       <item itemvalue="JUnit.All in CategoryService" />
       <item itemvalue="JUnit.All in ImageService" />
+      <item itemvalue="JUnit.UnitTest.postImage01" />
+      <item itemvalue="Spring Boot.UserServiceApplication" />
       <item itemvalue="Spring Boot.AlbumServiceApplication" />
       <item itemvalue="Spring Boot.ArtworkServiceApplication" />
       <item itemvalue="Spring Boot.ImageServiceApplication" />
       <item itemvalue="Spring Boot.CategoryApplication" />
-      <item itemvalue="JUnit.UnitTest.postImage01" />
+      <item itemvalue="Spring Boot.UserServiceApplication (1)" />
     </list>
     <recent_temporary>
       <list>
@@ -231,7 +243,8 @@
       <workItem from="1651578465342" duration="13047000" />
       <workItem from="1651649632820" duration="11000" />
       <workItem from="1651654312710" duration="13937000" />
-      <workItem from="1651742507381" duration="26423000" />
+      <workItem from="1651742507381" duration="26792000" />
+      <workItem from="1651833504921" duration="3054000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1650805639993</created>
@@ -401,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651820939987</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="2022-05-04: Webconfig Cors修改">
+      <created>1651821338190</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1651821338190</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

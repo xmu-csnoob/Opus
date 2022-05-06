@@ -34,7 +34,6 @@ public class ArtworkController {
             return new ReturnObject(ReturnNo.FILE_NOT_VALID,"上传文件为空");
         }
         String filename=file.getOriginalFilename();
-        assert filename != null;
         String postfix=filename.split("\\.")[1];
         if(!postfix.equals("png")&&!postfix.equals("jpg")&&!postfix.equals("jpeg")){
             return new ReturnObject<>(ReturnNo.FILE_NOT_VALID,"上传的文件格式有误");
