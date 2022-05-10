@@ -4,24 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="2022-05-04: 将cookie修改为header.token的形式">
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/microservice/ImageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/microservice/model/image/GetImageUrlRetVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/microservice/model/image/PostImageRetVo.java" afterDir="false" />
+    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="2022-05-04: User模块新增替换头像功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/controller/ArtworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/controller/ArtworkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/ImgService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/ImgService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/dao/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Common/src/main/java/cn/edu/xmu/wwf/opus/common/utils/ret/ReturnObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/cn/edu/xmu/wwf/opus/common/utils/ret/ReturnObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/controller/ImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/model/po/UserPo.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/model/po/UserPo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/model/vo/GetUserRetVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/model/vo/GetUserRetVo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +242,7 @@
       <workItem from="1651742507381" duration="26792000" />
       <workItem from="1651833504921" duration="12148000" />
       <workItem from="1652100668519" duration="1127000" />
-      <workItem from="1652167012508" duration="1645000" />
+      <workItem from="1652167012508" duration="6216000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1650805639993</created>
@@ -465,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651841443626</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="2022-05-04: User模块新增替换头像功能">
+      <created>1652168799722</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1652168799722</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +492,8 @@
     <MESSAGE value="2022-05-04: Login的Cookie设置为sameSite:None secure:false" />
     <MESSAGE value="2022-05-04: Login的Cookie设置为sameSite:None secure:true" />
     <MESSAGE value="2022-05-04: 将cookie修改为header.token的形式" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-05-04: 将cookie修改为header.token的形式" />
+    <MESSAGE value="2022-05-04: User模块新增替换头像功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-05-04: User模块新增替换头像功能" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

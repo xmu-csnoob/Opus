@@ -5,4 +5,5 @@ import lombok.Data;
 @Data
 public class GetUserRetVo {
     String name;
+    String avatarUrl;
 }

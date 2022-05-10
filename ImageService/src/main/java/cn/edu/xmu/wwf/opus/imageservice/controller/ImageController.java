@@ -23,7 +23,7 @@ public class ImageController {
     ImageService imageService;
     @ApiOperation("上传图像")
     @PostMapping("")
-    public ReturnObject<ImageRetVo> uploadImage(@RequestPart MultipartFile file,@RequestParam String region)throws IOException {
+    public ReturnObject<ImageRetVo> uploadImage(@RequestPart("file") MultipartFile file,@RequestParam String region)throws IOException {
         if(file.isEmpty()){
             return new ReturnObject<>(ReturnNo.FILE_NOT_VALID,"上传的文件是空文件");
         }

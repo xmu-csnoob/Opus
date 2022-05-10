@@ -8,6 +8,8 @@ import cn.edu.xmu.wwf.opus.userservice.microservice.model.image.PostImageRetVo;
 import cn.edu.xmu.wwf.opus.userservice.model.vo.UserLoginVo;
 import cn.edu.xmu.wwf.opus.userservice.model.vo.UserRegisterVo;
 import cn.edu.xmu.wwf.opus.userservice.service.UserService;
+import cn.edu.xmu.wwf.opus.userservice.util.TokenUtil;
+import org.apache.el.parser.Token;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -29,18 +31,22 @@ public class UserController {
     public ReturnObject register(@RequestBody UserRegisterVo userRegisterVo){
         return userService.registerNewUser(userRegisterVo);
     }
-    @GetMapping("/user/{id}")
-    public ReturnObject getUserInfo(@PathVariable int id){
+    @GetMapping("/user")
+    public ReturnObject getUserInfo(@RequestHeader String token){
+        int id= Integer.parseInt(TokenUtil.get(token));
         return userService.getUserInfo(id);
     }
-    @PutMapping("/user/{id}/avatar")
+    @PostMapping("/user/avatar")
     //先上传再修改
     //user绑定imageId作为avatar
-    public ReturnObject alterAvatar(@RequestPart("file") MultipartFile multipartFile,@PathVariable int id){
-        ReturnObject<PostImageRetVo> returnObject=imageService.uploadImage(multipartFile,"avatars");
+    public ReturnObject alterAvatar(@RequestPart("file") MultipartFile multipartFile,@RequestHeader String token){
+        int id= Integer.parseInt(TokenUtil.get(token));
+        ReturnObject returnObject=imageService.uploadImage(multipartFile,"avatars");
+        PostImageRetVo postImageRetVo=(PostImageRetVo) returnObject.data;
+        System.out.println(postImageRetVo);
         if(returnObject.returnNo!= ReturnNo.OK){
             return new ReturnObject(ReturnNo.INTERNAL_SERVER_ERROR,"上传图像失败");
         }
-        return userService.alterAvatar(id,returnObject.data.getUrl());
+        return userService.alterAvatar(id,postImageRetVo.getUrl());
     }
 }
