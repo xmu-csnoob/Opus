@@ -4,11 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="2022-05-04: Login的Cookie设置为sameSite:None secure:true">
+    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="2022-05-04: 将cookie修改为header.token的形式">
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/microservice/ImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/microservice/model/image/GetImageUrlRetVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/microservice/model/image/PostImageRetVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/controller/ArtworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/controller/ArtworkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/mq/InsertArtworkTopicListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/mq/InsertArtworkTopicListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/ImgService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/ImgService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/dao/CategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/cn/edu/xmu/wwf/opus/common/utils/ret/ReturnObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/cn/edu/xmu/wwf/opus/common/utils/ret/ReturnObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/controller/ImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/model/po/UserPo.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/model/po/UserPo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +83,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="17" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/UserService/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -82,11 +95,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\39511\Desktop\Opus\UserService\src\main\java\cn\edu\xmu\wwf\opus\userservice" />
       <recent name="C:\Users\39511\Desktop\Opus\UserService\src\main\resources" />
       <recent name="C:\Users\39511\Desktop\Opus\UserService\src\main\java\cn\edu\xmu\wwf\opus" />
       <recent name="C:\Users\39511\Desktop\Opus\CategoryService\src\main\java\cn\edu\xmu\wwf\opus\categoryservice" />
       <recent name="C:\Users\39511\Desktop\Opus\CategoryService\src\main\resources" />
-      <recent name="C:\Users\39511\Desktop\Opus\ImageService\src\main\resources\files" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\39511\Desktop\Opus\AlbumService\src\main\resources\mapper" />
@@ -106,7 +119,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserServiceApplication (1)">
+  <component name="RunManager" selected="JUnit.UnitTests">
     <configuration name="All in ArtworkService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtworkService" />
       <option name="PACKAGE_NAME" value="" />
@@ -189,20 +202,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="UserService" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.userservice.UserServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.UnitTests" />
       <item itemvalue="JUnit.All in ArtworkService" />
       <item itemvalue="JUnit.All in CategoryService" />
       <item itemvalue="JUnit.All in ImageService" />
       <item itemvalue="JUnit.UnitTest.postImage01" />
-      <item itemvalue="Spring Boot.UserServiceApplication" />
       <item itemvalue="Spring Boot.AlbumServiceApplication" />
       <item itemvalue="Spring Boot.ArtworkServiceApplication" />
       <item itemvalue="Spring Boot.ImageServiceApplication" />
@@ -246,7 +251,9 @@
       <workItem from="1651649632820" duration="11000" />
       <workItem from="1651654312710" duration="13937000" />
       <workItem from="1651742507381" duration="26792000" />
-      <workItem from="1651833504921" duration="7119000" />
+      <workItem from="1651833504921" duration="12148000" />
+      <workItem from="1652100668519" duration="1127000" />
+      <workItem from="1652167012508" duration="1645000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1650805639993</created>
@@ -451,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651838836636</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="2022-05-04: 将cookie修改为header.token的形式">
+      <created>1651841443626</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1651841443626</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +495,8 @@
     <MESSAGE value="2022-05-04: Login的Cookie设置为sameSite:None" />
     <MESSAGE value="2022-05-04: Login的Cookie设置为sameSite:None secure:false" />
     <MESSAGE value="2022-05-04: Login的Cookie设置为sameSite:None secure:true" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-05-04: Login的Cookie设置为sameSite:None secure:true" />
+    <MESSAGE value="2022-05-04: 将cookie修改为header.token的形式" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-05-04: 将cookie修改为header.token的形式" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

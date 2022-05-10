@@ -79,8 +79,7 @@ public class CategoryService {
         return new ReturnObject(categoryDao.delCategotyContainFromDB(categoryId, artworkId));
     }
     public ReturnObject getCategoryInfoAboutArtwork(int artworkId){
-        List<CategoryContainPo> categoryContainPoList=categoryDao.selectCategoryContainsFromDB(artworkId);
-        System.out.println(categoryContainPoList.size());
+        List<CategoryContainPo> categoryContainPoList=categoryDao.selectCategoryContainsByArtworkIdFromDB(artworkId);
         if(categoryContainPoList.isEmpty()){
             return new ReturnObject(ReturnNo.RESOURCE_NOT_FOUND,"该作品不属于任何一个类别");
         }

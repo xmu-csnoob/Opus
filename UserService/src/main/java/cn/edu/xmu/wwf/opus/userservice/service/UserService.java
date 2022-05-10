@@ -48,4 +48,16 @@ public class UserService {
         BeanUtils.copyProperties(userPo,getUserRetVo);
         return new ReturnObject(getUserRetVo);
     }
+    public ReturnObject alterAvatar(int id,String imageUrl){
+        UserPo userPo=userDao.getUserByPrimaryId(id);
+        if(userPo==null){
+            return new ReturnObject(ReturnNo.RESOURCE_NOT_FOUND,"该用户不存在");
+        }
+        int res=userDao.alterAvatarInDB(id,imageUrl);
+        if(res==1){
+            return new ReturnObject("success");
+        }else{
+            return new ReturnObject(ReturnNo.INTERNAL_SERVER_ERROR,"数据库操作异常");
+        }
+    }
 }

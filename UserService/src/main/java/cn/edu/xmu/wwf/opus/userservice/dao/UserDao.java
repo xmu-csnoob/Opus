@@ -24,4 +24,7 @@ public class UserDao {
     public UserPo getUserByPrimaryId(int id){
         return userMapper.selectUserPoById(id);
     }
+    public int alterAvatarInDB(int id,String url){
+        return userMapper.updateUserPoAvatar(id,url);
+    }
 }

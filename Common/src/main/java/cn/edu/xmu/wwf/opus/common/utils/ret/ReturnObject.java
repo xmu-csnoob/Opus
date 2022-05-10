@@ -1,5 +1,8 @@
 package cn.edu.xmu.wwf.opus.common.utils.ret;
 
+import lombok.Data;
+
+@Data
 public class ReturnObject<T> {
     public ReturnNo returnNo;
     public T data;

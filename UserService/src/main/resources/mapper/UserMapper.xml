@@ -10,4 +10,9 @@
     <select id="selectUserPoById" resultType="cn.edu.xmu.wwf.opus.userservice.model.po.UserPo">
         SELECT * FROM user where id=#{id};
     </select>
+    <update id="updateUserPoAvatar">
+        UPDATE user
+        SET avatar_url=#{url}
+        WHERE id=#{id}
+    </update>
 </mapper>

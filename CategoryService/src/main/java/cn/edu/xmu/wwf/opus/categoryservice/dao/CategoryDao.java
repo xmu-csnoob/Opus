@@ -32,7 +32,7 @@ public class CategoryDao {
     public CategoryContainPo selectCategoryContainFromDB(int categoryId,int artworkId){
         return categoryMapper.selectCategoryContainPo(categoryId,artworkId);
     }
-    public List<CategoryContainPo> selectCategoryContainsFromDB(int artworkId){
+    public List<CategoryContainPo> selectCategoryContainsByArtworkIdFromDB(int artworkId){
         return categoryMapper.selectCategoryContainsByArtworkId(artworkId);
     }
     public List<CategoryPo> selectAllCategoryFromDB(){

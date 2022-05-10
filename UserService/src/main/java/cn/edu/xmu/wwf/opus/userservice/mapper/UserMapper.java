@@ -8,4 +8,5 @@ public interface UserMapper {
     UserPo selectUserPoByUsername(String username);
     int insertUserPo(UserPo userPo);
     UserPo selectUserPoById(int id);
+    int updateUserPoAvatar(int id,String url);
 }

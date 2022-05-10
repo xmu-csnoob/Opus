@@ -7,4 +7,5 @@ public class UserPo {
     int id;
     String name;
     String password;
+    String avatarUrl;
 }

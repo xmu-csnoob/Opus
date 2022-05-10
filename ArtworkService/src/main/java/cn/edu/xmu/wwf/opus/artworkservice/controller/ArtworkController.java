@@ -39,7 +39,7 @@ public class ArtworkController {
             return new ReturnObject<>(ReturnNo.FILE_NOT_VALID,"上传的文件格式有误");
         }
         ReturnObject<PostImageRetVo> returnObject;
-        returnObject=imgService.uploadImage(file);
+        returnObject=imgService.uploadImage(file,"artwork");
         return artworkService.addArtwork(new ArtworkPostVo(id,returnObject.data.getId(),name,categoryIds,introduction,returnObject.data.getUrl()));
     }
     @ApiOperation("作品上架")
