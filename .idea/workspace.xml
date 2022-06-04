@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="2022-05-04: User模块新增替换头像功能">
+      <change afterPath="$PROJECT_DIR$/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/tessdata/chi_sim.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/tessdata/configs/api_config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/tessdata/configs/digits" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/tessdata/configs/hocr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/tessdata/eng.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/tessdata/osd.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/tessdata/pdf.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/tessdata/pdf.ttx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/src/main/java/cn/edu/xmu/wwf/opus/common/utils/ret/ReturnObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/cn/edu/xmu/wwf/opus/common/utils/ret/ReturnObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/controller/ImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/model/vo/GetUserRetVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/model/vo/GetUserRetVo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,31 +62,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="jdk.selected.JAVA_MODULE" value="17" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/wangwenfei/IdeaProjects/Opus/ImageService/src/main/resources/files",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "830ac09064a3d1d829c93c69c9b9816f"
+  }
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -108,7 +112,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UnitTests">
+  <component name="RunManager" selected="Spring Boot.ImageServiceApplication">
     <configuration name="All in ArtworkService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtworkService" />
       <option name="PACKAGE_NAME" value="" />
@@ -152,7 +156,6 @@
     <configuration name="AlbumServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="AlbumService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.xmu.wwf.opus.albumservice.AlbumServiceApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,13 +169,13 @@
     </configuration>
     <configuration name="CategoryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="CategoryService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.xmu.wwf.opus.categoryservice.CategoryApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.edu.xmu.wwf.opus.categoryservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.xmu.wwf.opus.categoryservice.CategoryApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -192,7 +195,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.UnitTests" />
       <item itemvalue="JUnit.All in ArtworkService" />
       <item itemvalue="JUnit.All in CategoryService" />
       <item itemvalue="JUnit.All in ImageService" />
@@ -200,8 +202,8 @@
       <item itemvalue="Spring Boot.AlbumServiceApplication" />
       <item itemvalue="Spring Boot.ArtworkServiceApplication" />
       <item itemvalue="Spring Boot.ImageServiceApplication" />
-      <item itemvalue="Spring Boot.CategoryApplication" />
       <item itemvalue="Spring Boot.UserServiceApplication (1)" />
+      <item itemvalue="Spring Boot.CategoryApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -243,6 +245,13 @@
       <workItem from="1651833504921" duration="12148000" />
       <workItem from="1652100668519" duration="1127000" />
       <workItem from="1652167012508" duration="6216000" />
+      <workItem from="1654141218870" duration="656000" />
+      <workItem from="1654141891039" duration="106000" />
+      <workItem from="1654142009077" duration="1095000" />
+      <workItem from="1654143429013" duration="61000" />
+      <workItem from="1654315384372" duration="82000" />
+      <workItem from="1654322700916" duration="583000" />
+      <workItem from="1654323864611" duration="2045000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1650805639993</created>
@@ -466,6 +475,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
