@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="2022-05-04: User模块新增替换头像功能">
-      <change afterPath="$PROJECT_DIR$/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/tessdata/chi_sim.traineddata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/tessdata/configs/api_config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/tessdata/configs/digits" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/tessdata/configs/hocr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/tessdata/eng.traineddata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/tessdata/osd.traineddata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/tessdata/pdf.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageService/src/main/resources/files/tessdata/pdf.ttx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImageService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/controller/ImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/service/ImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/utils/CosUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/utils/CosUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +61,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/wangwenfei/IdeaProjects/Opus/ImageService/src/main/resources/files",
+    "last_opened_file_path": "C:/Users/wangwenfei/Desktop/代码/OpusSite",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,8 +69,14 @@
     "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "830ac09064a3d1d829c93c69c9b9816f"
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "spring.configuration.checksum": "76170a7052b5d190262d641b326c311e",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -199,10 +195,10 @@
       <item itemvalue="JUnit.All in CategoryService" />
       <item itemvalue="JUnit.All in ImageService" />
       <item itemvalue="JUnit.UnitTest.postImage01" />
+      <item itemvalue="Spring Boot.UserServiceApplication (1)" />
       <item itemvalue="Spring Boot.AlbumServiceApplication" />
       <item itemvalue="Spring Boot.ArtworkServiceApplication" />
       <item itemvalue="Spring Boot.ImageServiceApplication" />
-      <item itemvalue="Spring Boot.UserServiceApplication (1)" />
       <item itemvalue="Spring Boot.CategoryApplication" />
     </list>
     <recent_temporary>
@@ -252,6 +248,12 @@
       <workItem from="1654315384372" duration="82000" />
       <workItem from="1654322700916" duration="583000" />
       <workItem from="1654323864611" duration="2045000" />
+      <workItem from="1654502517302" duration="2059000" />
+      <workItem from="1654511143909" duration="340000" />
+      <workItem from="1654592434893" duration="26000" />
+      <workItem from="1655025344245" duration="20000" />
+      <workItem from="1655131773244" duration="773000" />
+      <workItem from="1655353815077" duration="2448000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1650805639993</created>

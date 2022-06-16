@@ -9,6 +9,7 @@ import cn.edu.xmu.wwf.opus.imageservice.utils.TextUtils;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
 import cn.edu.xmu.wwf.opus.imageservice.model.vo.ImageUrlRetVo;
+import org.apache.pdfbox.util.filetypedetector.FileType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -28,9 +29,9 @@ public class ImageService {
         MultipartFile file = imagePostVo.getMultipartFile();
         InputStream in = file.getInputStream();
         String filename = file.getOriginalFilename();
-        String key = TextUtils.generateFileName(filename);
         try {
-            String imageUrl = cosUtils.uploadImage(in, key);
+            cosUtils.uploadFile(filename, CosUtils.FileType.TEST, in);
+            String imageUrl = cosUtils.getDownloadUrl(filename, CosUtils.FileType.TEST);
             ImageRetVo imageRetVo = new ImageRetVo(0, filename, imageUrl, LocalDateTime.now());
             int imageId = imageDao.addImageToDB(imageRetVo).getId();
             imageRetVo.setId(imageId);
