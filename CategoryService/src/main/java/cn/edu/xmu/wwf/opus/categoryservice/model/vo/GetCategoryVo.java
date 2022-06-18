@@ -6,4 +6,6 @@ import lombok.Data;
 public class GetCategoryVo {
     int id;
     String name;
+    String imageUrl;
+    String introduction;
 }

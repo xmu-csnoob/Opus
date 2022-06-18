@@ -1,6 +1,7 @@
 package cn.edu.xmu.wwf.opus.categoryservice.service;
 
 import cn.edu.xmu.wwf.opus.categoryservice.dao.CategoryDao;
+import cn.edu.xmu.wwf.opus.categoryservice.microservice.ImageService;
 import cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryPo;
 import cn.edu.xmu.wwf.opus.categoryservice.model.vo.GetCategoryVo;
 import cn.edu.xmu.wwf.opus.categoryservice.model.vo.PostCategoryVo;
@@ -8,6 +9,7 @@ import cn.edu.xmu.wwf.opus.categoryservice.microservice.ArtworkService;
 import cn.edu.xmu.wwf.opus.categoryservice.microservice.model.GetArtWorkRetVo;
 import cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryContainPo;
 import cn.edu.xmu.wwf.opus.categoryservice.model.vo.PostCategoryContainVo;
+import cn.edu.xmu.wwf.opus.categoryservice.util.PageConfigUtil;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
 import org.springframework.beans.BeanUtils;
@@ -23,7 +25,8 @@ public class CategoryService {
     CategoryDao categoryDao;
     @Autowired
     ArtworkService artworkService;
-
+    @Autowired
+    ImageService imageService;
     public ReturnObject addCategory(PostCategoryVo postCategoryVo) {
         CategoryPo categoryPo = new CategoryPo();
         BeanUtils.copyProperties(postCategoryVo, categoryPo);
@@ -91,5 +94,24 @@ public class CategoryService {
             getCategoryVos.add(getCategoryVo);
         }
         return new ReturnObject(getCategoryVos);
+    }
+    public ReturnObject getCategoryInfo(int id){
+        CategoryPo categoryPo=categoryDao.selectCategoryFromDB(id);
+        GetCategoryVo getCategoryVo=new GetCategoryVo();
+        BeanUtils.copyProperties(categoryPo,getCategoryVo);
+        getCategoryVo.setImageUrl(imageService.getImageInfo(categoryPo.getImageId()).data.getUrl());
+        return new ReturnObject(getCategoryVo);
+    }
+    public ReturnObject getArtworksByCategoryId(int categoryId, PageConfigUtil pageConfigUtil){
+        List<CategoryContainPo> categoryContainPoList=categoryDao.selectCategoryContainsByCategoryIdFromDB(categoryId,pageConfigUtil).getList();
+        List<GetArtWorkRetVo> getArtWorkRetVos=new ArrayList<>();
+        for(CategoryContainPo categoryContainPo:categoryContainPoList){
+            ReturnObject<GetArtWorkRetVo> returnObject=artworkService.getArtwork(categoryContainPo.getArtworkId());
+            if(returnObject.returnNo==ReturnNo.OK){
+                System.out.println(returnObject.data);
+                getArtWorkRetVos.add(returnObject.data);
+            }
+        }
+        return new ReturnObject(getArtWorkRetVos);
     }
 }

@@ -15,10 +15,15 @@ public class ImageDao {
     @Autowired
     RedisUtils<String, ImagePo> redisUtils;
     public ImagePo addImageToDB(ImageRetVo imageRetVo){
-        ImagePo imagePo=new ImagePo();
-        BeanUtils.copyProperties(imageRetVo,imagePo);
-        imageMapper.insertPo(imagePo);
-        return imagePo;
+        try{
+            ImagePo imagePo=new ImagePo();
+            BeanUtils.copyProperties(imageRetVo,imagePo);
+            imageMapper.insertPo(imagePo);
+            return imagePo;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return null;
     }
     public ImagePo getImagePoFromDB(int id){
         return imageMapper.selectById(id);

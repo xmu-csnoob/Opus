@@ -8,5 +8,4 @@ import java.io.Serializable;
 public class ImagePo implements Serializable {
     int id;
     String name;
-    String url;
 }

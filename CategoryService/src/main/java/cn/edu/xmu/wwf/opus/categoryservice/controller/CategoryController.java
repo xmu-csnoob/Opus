@@ -3,6 +3,7 @@ package cn.edu.xmu.wwf.opus.categoryservice.controller;
 import cn.edu.xmu.wwf.opus.categoryservice.model.vo.PostCategoryContainVo;
 import cn.edu.xmu.wwf.opus.categoryservice.model.vo.PostCategoryVo;
 import cn.edu.xmu.wwf.opus.categoryservice.service.CategoryService;
+import cn.edu.xmu.wwf.opus.categoryservice.util.PageConfigUtil;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnObject;
 import io.swagger.annotations.Api;
@@ -51,5 +52,15 @@ public class CategoryController {
     @GetMapping("")
     public ReturnObject getAllCategory(){
         return categoryService.getAllCategory();
+    }
+    @ApiOperation("获取一个Category的详细信息")
+    @GetMapping("/{id}")
+    public ReturnObject getCategory(@PathVariable int id){
+        return categoryService.getCategoryInfo(id);
+    }
+    @ApiOperation("获取一个Category对应的Artwork的ID list(分页)")
+    @GetMapping("/{id}/artworks")
+    public ReturnObject getCategoryArtworks(@PathVariable int id,@RequestParam int pageNum,@RequestParam int pageSize){
+        return categoryService.getArtworksByCategoryId(id,new PageConfigUtil(pageNum,pageSize));
     }
 }

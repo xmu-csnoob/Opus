@@ -16,4 +16,5 @@ public interface CategoryMapper {
     CategoryPo selectCategoryPo(int id);
     CategoryContainPo selectCategoryContainPo(int categoryId,int artworkId);
     List<CategoryContainPo> selectCategoryContainsByArtworkId(int artworkId);
+    List<CategoryContainPo> selectCategoryContainsByCategoryId(int categoryId);
 }

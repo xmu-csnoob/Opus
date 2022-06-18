@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="opus@123.60.75.90" uuid="802bd100-155c-4390-a950-597c0d57b74b">
+    <data-source source="LOCAL" name="opus@123.60.75.90" uuid="0bc35467-ee00-4c4e-a48b-9ed1c92b1e1c">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://123.60.75.90:3306/opus</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="opus@gz-cynosdbmysql-grp-2g3s6jwb.sql.tencentcdb.com" uuid="3c29ce99-87c0-4c1b-a39f-e6d6228df9fd">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://gz-cynosdbmysql-grp-2g3s6jwb.sql.tencentcdb.com:28229/opus</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

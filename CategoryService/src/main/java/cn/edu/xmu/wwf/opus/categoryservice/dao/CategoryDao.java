@@ -3,6 +3,9 @@ package cn.edu.xmu.wwf.opus.categoryservice.dao;
 import cn.edu.xmu.wwf.opus.categoryservice.mapper.CategoryMapper;
 import cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryPo;
 import cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryContainPo;
+import cn.edu.xmu.wwf.opus.categoryservice.util.PageConfigUtil;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -34,6 +37,11 @@ public class CategoryDao {
     }
     public List<CategoryContainPo> selectCategoryContainsByArtworkIdFromDB(int artworkId){
         return categoryMapper.selectCategoryContainsByArtworkId(artworkId);
+    }
+    public PageInfo<CategoryContainPo> selectCategoryContainsByCategoryIdFromDB(int categoryId, PageConfigUtil pageConfigUtil){
+        PageHelper.startPage(pageConfigUtil.getPage(),pageConfigUtil.getPageSize());
+        List<CategoryContainPo> categoryPos=categoryMapper.selectCategoryContainsByCategoryId(categoryId);
+        return new PageInfo<>(categoryPos);
     }
     public List<CategoryPo> selectAllCategoryFromDB(){
         return categoryMapper.selectAllCategoryPo();

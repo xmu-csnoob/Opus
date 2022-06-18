@@ -44,33 +44,7 @@ public class ImageController {
     }
     @ApiOperation("根据id查询name和url")
     @GetMapping("/{id}")
-    public ReturnObject<ImageUrlRetVo> getImageInfo(@PathVariable int id){
+    public ReturnObject<ImageUrlRetVo> getImageInfo(@PathVariable int id) {
         return imageService.getUrlRetVo(id);
-    }
-    @PostMapping("/api")
-    public Object Api(@RequestPart("image")MultipartFile multipartFile) throws IOException {
-
-        File file = null;
-        ITesseract instance = new Tesseract();
-
-        InputStream ins=null;
-        ins=multipartFile.getInputStream();
-        file=new File(Objects.requireNonNull(multipartFile.getOriginalFilename()));
-        FileUtils.copyInputStreamToFile(multipartFile.getInputStream(), file);
-        //设置训练库的位置
-        String lagnguagePath = "C:\\Users\\wangwenfei\\IdeaProjects\\Opus\\ImageService\\src\\main\\resources\\files\\tessdata";
-        instance.setDatapath(lagnguagePath);
-
-        instance.setLanguage("chi_sim");//chi_sim ：简体中文， eng	根据需求选择语言库
-        String result = null;
-        try {
-            long startTime = System.currentTimeMillis();
-            result =  instance.doOCR(file);
-            long endTime = System.currentTimeMillis();
-            System.out.println("Time is：" + (endTime - startTime) + " 毫秒");
-        } catch (TesseractException e) {
-            e.printStackTrace();
-        }
-        return result;
     }
 }

@@ -46,7 +46,7 @@ public class ImageService {
             return new ReturnObject<>(ReturnNo.RESOURCE_NOT_FOUND, "该图像id不存在");
         }
         ImageUrlRetVo imageUrlRetVo = new ImageUrlRetVo();
-        imageUrlRetVo.setUrl(imagePo.getUrl());
+        imageUrlRetVo.setUrl(cosUtils.getDownloadUrl(imagePo.getName(), CosUtils.FileType.TEST));
         return new ReturnObject<>(imageUrlRetVo);
     }
 }

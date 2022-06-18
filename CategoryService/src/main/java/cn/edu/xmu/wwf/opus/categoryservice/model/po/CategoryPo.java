@@ -6,4 +6,6 @@ import lombok.Data;
 public class CategoryPo {
     int id;
     String name;
+    int imageId;
+    String introduction;
 }

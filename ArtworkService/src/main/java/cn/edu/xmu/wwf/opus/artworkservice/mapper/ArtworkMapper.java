@@ -13,4 +13,5 @@ public interface ArtworkMapper {
     ArtworkPo selectById(int id);
     int alterState(int id,int state);
     List<ArtworkPo> selectByKeyword(String keyword);
+    List<ArtworkPo> selectByCategoryId(int id);
 }

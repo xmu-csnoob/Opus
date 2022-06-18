@@ -5,7 +5,7 @@
         SELECT * FROM image WHERE id=#{id}
     </select>
     <insert id="insertPo" keyProperty="id" useGeneratedKeys="true">
-        INSERT INTO image(name,url)
-        VALUES(#{name},#{url})
+        INSERT INTO image(name)
+        VALUES(#{name})
     </insert>
 </mapper>

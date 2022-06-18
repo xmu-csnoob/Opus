@@ -3,7 +3,7 @@ package cn.edu.xmu.wwf.opus.artworkservice.controller;
 import cn.edu.xmu.wwf.opus.artworkservice.microservice.model.image.PostImageRetVo;
 import cn.edu.xmu.wwf.opus.artworkservice.model.vo.ArtworkPostVo;
 import cn.edu.xmu.wwf.opus.artworkservice.service.ArtworkService;
-import cn.edu.xmu.wwf.opus.artworkservice.microservice.ImgService;
+import cn.edu.xmu.wwf.opus.artworkservice.microservice.ImageService;
 import cn.edu.xmu.wwf.opus.artworkservice.utils.PageConfigUtil;
 import cn.edu.xmu.wwf.opus.common.utils.jwt.TokenDecodeUtil;
 import cn.edu.xmu.wwf.opus.common.utils.ret.ReturnNo;
@@ -25,7 +25,7 @@ public class ArtworkController {
     @Autowired
     ArtworkService artworkService;
     @Autowired
-    ImgService imgService;
+    ImageService imgService;
     @ApiOperation("提交作品")
     @PostMapping("")
     public ReturnObject addArtwork(@RequestHeader("token") String token,@RequestPart("File") MultipartFile file, @RequestPart("Name") String name, @RequestPart("Category") List<Integer> categoryIds, @RequestPart("Introduction")String introduction) throws Throwable {
@@ -38,8 +38,8 @@ public class ArtworkController {
         if(!postfix.equals("png")&&!postfix.equals("jpg")&&!postfix.equals("jpeg")){
             return new ReturnObject<>(ReturnNo.FILE_NOT_VALID,"上传的文件格式有误");
         }
-        ReturnObject<PostImageRetVo> returnObject;
-        returnObject=imgService.uploadImage(file,"artwork");
+        ReturnObject<PostImageRetVo> returnObject=imgService.uploadImage(file,"artwork");
+        System.out.println(returnObject.data);
         return artworkService.addArtwork(new ArtworkPostVo(id,returnObject.data.getId(),name,categoryIds,introduction,returnObject.data.getUrl()));
     }
     @ApiOperation("作品上架")

@@ -22,6 +22,9 @@
     <select id="selectCategoryContainsByArtworkId" resultType="cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryContainPo">
         SELECT * FROM category_contain where artwork_id=#{artworkId};
     </select>
+    <select id="selectCategoryContainsByCategoryId" resultType="cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryContainPo">
+        SELECT * FROM category_contain where category_id=#{categoryId}
+    </select>
     <select id="selectAllCategoryPo" resultType="cn.edu.xmu.wwf.opus.categoryservice.model.po.CategoryPo">
         SELECT * FROM category;
     </select>

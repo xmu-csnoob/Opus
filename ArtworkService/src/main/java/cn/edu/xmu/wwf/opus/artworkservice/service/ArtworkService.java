@@ -1,7 +1,7 @@
 package cn.edu.xmu.wwf.opus.artworkservice.service;
 
 import cn.edu.xmu.wwf.opus.artworkservice.dao.ArtworkDao;
-import cn.edu.xmu.wwf.opus.artworkservice.microservice.ImgService;
+import cn.edu.xmu.wwf.opus.artworkservice.microservice.ImageService;
 import cn.edu.xmu.wwf.opus.artworkservice.model.po.ArtworkPo;
 import cn.edu.xmu.wwf.opus.artworkservice.model.vo.ArtworkPostVo;
 import cn.edu.xmu.wwf.opus.artworkservice.model.vo.GetArtworkRetVo;
@@ -17,7 +17,7 @@ public class ArtworkService {
     @Autowired
     ArtworkDao artworkDao;
     @Autowired
-    ImgService imgService;
+    ImageService imgService;
     public ReturnObject addArtwork(ArtworkPostVo artworkPostVo){
         return artworkDao.asyncAddArtworkIntoDB(artworkPostVo);
     }
