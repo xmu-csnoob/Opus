@@ -1,0 +1,31 @@
+server:
+  port: 12104
+  servlet:
+    encoding:
+      charset: utf-8
+feign:
+  client:
+    config:
+      defalt:
+        readTimeout: 600000
+        connectTimeout: 600000
+spring:
+  http:
+    encoding:
+      charset: utf-8
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 121.37.149.40:8848
+  application:
+    name: CollectionService
+  datasource:
+    url: jdbc:mysql://123.60.75.90:3306/opus?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: XMUwwf@4288
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:/mapper/*xml
+  type-aliases-package: cn.edu.xmu.wwf.opus.collectionservice.model
+  configuration:
+    map-underscore-to-camel-case: true

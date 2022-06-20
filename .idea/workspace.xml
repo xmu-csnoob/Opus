@@ -4,34 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="2022-6-16:COS服务更换为华为云OBS">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/microservice/ImageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/microservice/model/GetImageUrlRetVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/microservice/model/PostImageRetVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/util/PageConfigUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollectionService/CollectionService.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EvaluationService/EvaluationService.iml" afterDir="false" />
+    <list default="true" id="ff11ad7e-170e-49df-93f3-b27a79993cdb" name="Changes" comment="2022-6-16:修改部分API">
+      <change afterPath="$PROJECT_DIR$/CollectionService/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CollectionService/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CollectionService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CollectionService/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CollectionService/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CollectionService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CollectionService/src/main/java/cn/edu/xmu/wwf/opus/collectionservice/CollectionServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CollectionService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CollectionService/src/main/resources/mapper/CollectionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CollectionService/src/test/java/cn/edu/xmu/wwf/opus/collectionservice/CollectionServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/src/main/java/cn/edu/xmu/wwf/opus/evaluationservice/EvaluationServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/src/main/java/cn/edu/xmu/wwf/opus/evaluationservice/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/src/main/java/cn/edu/xmu/wwf/opus/evaluationservice/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/src/main/java/cn/edu/xmu/wwf/opus/evaluationservice/controller/EvaluationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/src/main/java/cn/edu/xmu/wwf/opus/evaluationservice/dao/EvaluationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/src/main/java/cn/edu/xmu/wwf/opus/evaluationservice/mapper/EvaluationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/src/main/java/cn/edu/xmu/wwf/opus/evaluationservice/model/po/CommentPo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/src/main/java/cn/edu/xmu/wwf/opus/evaluationservice/model/po/StarPo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/src/main/java/cn/edu/xmu/wwf/opus/evaluationservice/model/vo/GetStarInfoVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/src/main/java/cn/edu/xmu/wwf/opus/evaluationservice/model/vo/PostCommentVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/src/main/java/cn/edu/xmu/wwf/opus/evaluationservice/service/EvaluationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/src/main/resources/mapper/EvaluationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EvaluationService/src/test/java/cn/edu/xmu/wwf/opus/evaluationservice/EvaluationServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/controller/ArtworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/controller/ArtworkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/mapper/ArtworkMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/mapper/ArtworkMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/ImgService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/microservice/ImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/service/ArtworkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/service/ArtworkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/dao/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/mapper/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/mapper/CategoryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/model/po/CategoryPo.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/model/po/CategoryPo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/model/vo/GetCategoryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/model/vo/GetCategoryVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/resources/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/controller/ImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/dao/ImageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/dao/ImageDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/model/po/ImagePo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/model/po/ImagePo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/java/cn/edu/xmu/wwf/opus/imageservice/service/ImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageService/src/main/resources/mapper/ImageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ImageService/src/main/resources/mapper/ImageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/model/vo/GetArtworkRetVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArtworkService/src/main/java/cn/edu/xmu/wwf/opus/artworkservice/model/vo/GetArtworkRetVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/microservice/model/GetArtWorkRetVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/microservice/model/GetArtWorkRetVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollectionService/CollectionService.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvaluationService/EvaluationService.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/cn/edu/xmu/wwf/opus/userservice/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +57,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -86,16 +102,16 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-11",
-    "last_opened_file_path": "C:/Users/wangwenfei/Desktop/代码/Opus/CategoryService/src/main/java/cn/edu/xmu/wwf/opus/categoryservice/microservice/model",
+    "last_opened_file_path": "C:/Users/wangwenfei/Desktop/代码/Opus/CollectionService/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "spring.configuration.checksum": "ad929a6c74ed9095a6c73c9c8c6aa71e",
+    "spring.configuration.checksum": "cf53a571b123808527aa404d9f1e98d7",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -109,11 +125,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wangwenfei\Desktop\代码\Opus\CollectionService\src\main\resources" />
+      <recent name="C:\Users\wangwenfei\Desktop\代码\Opus\EvaluationService\src\main\resources" />
+      <recent name="C:\Users\wangwenfei\Desktop\代码\Opus\EvaluationService\src\main\java\cn\edu\xmu\wwf\opus\evaluationservice" />
+      <recent name="C:\Users\wangwenfei\Desktop\代码\Opus\EvaluationService\src" />
       <recent name="C:\Users\wangwenfei\Desktop\代码\Opus\CategoryService\src\main\java\cn\edu\xmu\wwf\opus\categoryservice\microservice\model" />
-      <recent name="C:\Users\39511\Desktop\Opus\UserService\src\main\java\cn\edu\xmu\wwf\opus\userservice" />
-      <recent name="C:\Users\39511\Desktop\Opus\UserService\src\main\resources" />
-      <recent name="C:\Users\39511\Desktop\Opus\UserService\src\main\java\cn\edu\xmu\wwf\opus" />
-      <recent name="C:\Users\39511\Desktop\Opus\CategoryService\src\main\java\cn\edu\xmu\wwf\opus\categoryservice" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\39511\Desktop\Opus\AlbumService\src\main\resources\mapper" />
@@ -133,7 +149,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CategoryApplication">
+  <component name="RunManager" selected="Spring Boot.EvaluationServiceApplication">
     <configuration name="All in ArtworkService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtworkService" />
       <option name="PACKAGE_NAME" value="" />
@@ -201,6 +217,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CollectionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="CollectionService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.xmu.wwf.opus.collectionservice.CollectionServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EvaluationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="EvaluationService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.xmu.wwf.opus.evaluationservice.EvaluationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ImageServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ImageService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.xmu.wwf.opus.imageservice.ImageServiceApplication" />
@@ -208,7 +238,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="UserService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.xmu.wwf.opus.userservice.UserServiceApplication" />
       <method v="2">
@@ -220,7 +251,9 @@
       <item itemvalue="JUnit.All in CategoryService" />
       <item itemvalue="JUnit.All in ImageService" />
       <item itemvalue="JUnit.UnitTest.postImage01" />
-      <item itemvalue="Spring Boot.UserServiceApplication (1)" />
+      <item itemvalue="Spring Boot.CollectionServiceApplication" />
+      <item itemvalue="Spring Boot.EvaluationServiceApplication" />
+      <item itemvalue="Spring Boot.UserServiceApplication" />
       <item itemvalue="Spring Boot.AlbumServiceApplication" />
       <item itemvalue="Spring Boot.ArtworkServiceApplication" />
       <item itemvalue="Spring Boot.ImageServiceApplication" />
@@ -282,7 +315,10 @@
       <workItem from="1655363744284" duration="73000" />
       <workItem from="1655363846372" duration="720000" />
       <workItem from="1655465276648" duration="2983000" />
-      <workItem from="1655521346450" duration="10935000" />
+      <workItem from="1655521346450" duration="14206000" />
+      <workItem from="1655611859628" duration="4047000" />
+      <workItem from="1655645275865" duration="5465000" />
+      <workItem from="1655694812589" duration="5327000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1650805639993</created>
@@ -508,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655356887352</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="2022-6-16:修改部分API">
+      <created>1655539691259</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1655539691259</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +570,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="First Commit" />
     <MESSAGE value="2022-04-26: 增加Image、Common、Artwork模块，实现了image upload和artwork post的接口" />
     <MESSAGE value="2022-05-01: 完善了Album Artwork Image三个模块 并设计通过了相应的单元测试" />
     <MESSAGE value="2022-05-01: 完成了Category模块，编写并通过了单元测试" />
@@ -552,7 +594,8 @@
     <MESSAGE value="2022-05-04: 将cookie修改为header.token的形式" />
     <MESSAGE value="2022-05-04: User模块新增替换头像功能" />
     <MESSAGE value="2022-6-16:COS服务更换为华为云OBS" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-6-16:COS服务更换为华为云OBS" />
+    <MESSAGE value="2022-6-16:修改部分API" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-6-16:修改部分API" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

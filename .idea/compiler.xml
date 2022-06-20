@@ -9,9 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="AlbumService" />
         <module name="ArtworkService" />
-        <module name="CategoryService" />
-        <module name="ImageService" />
+        <module name="CollectionService" />
         <module name="UserService" />
+        <module name="CategoryService" />
+        <module name="EvaluationService" />
+        <module name="ImageService" />
         <module name="Common" />
       </profile>
     </annotationProcessing>
@@ -21,7 +23,9 @@
       <module name="AlbumService" options="-parameters" />
       <module name="ArtworkService" options="-parameters" />
       <module name="CategoryService" options="-parameters" />
+      <module name="CollectionService" options="-parameters" />
       <module name="Common" options="-parameters" />
+      <module name="EvaluationService" options="-parameters" />
       <module name="ImageService" options="-parameters" />
       <module name="Opus" options="-parameters" />
       <module name="UserService" options="-parameters" />

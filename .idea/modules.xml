@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/CollectionService/CollectionService.iml" filepath="$PROJECT_DIR$/CollectionService/CollectionService.iml" />
-      <module fileurl="file://$PROJECT_DIR$/EvaluationService/EvaluationService.iml" filepath="$PROJECT_DIR$/EvaluationService/EvaluationService.iml" />
-    </modules>
-  </component>
-</project>

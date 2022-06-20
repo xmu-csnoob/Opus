@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.xmu.wwf.opus.evaluationservice.mapper.EvaluationMapper">
+    <select id="selectCommentPoById" resultType="cn.edu.xmu.wwf.opus.evaluationservice.model.po.CommentPo">
+        SELECT * FROM comment where id=#{id};
+    </select>
+    <insert id="insertCommentPo" parameterType="cn.edu.xmu.wwf.opus.evaluationservice.model.po.CommentPo">
+        INSERT INTO comment (content,type,be_commented_id,user_id)
+        VALUES (#{content},#{type},#{beCommentedId},#{userId});
+    </insert>
+    <delete id="deleteCommentPoById">
+        DELETE FROM comment
+        WHERE id=#{id};
+    </delete>
+    <insert id="insertStarPo" parameterType="cn.edu.xmu.wwf.opus.evaluationservice.model.po.StarPo">
+        INSERT INTO star
+        (artwork_id,user_id)
+        VALUES(#{artworkId},#{userId});
+    </insert>
+    <delete id="deleteStarPoById">
+        DELETE FROM star
+        WHERE user_id=#{userId} and artwork_id=#{artworkId};
+    </delete>
+    <select id="selectStarPoByUserIdAndArtworkId" resultType="cn.edu.xmu.wwf.opus.evaluationservice.model.po.StarPo">
+        SELECT * FROM star
+        WHERE user_id=#{userId} and artwork_id=#{artworkId};
+    </select>
+    <select id="selectStarCountByArtworkId" resultType="java.lang.Integer">
+        SELECT count(id) FROM star
+        WHERE artwork_id=#{artworkId};
+    </select>
+</mapper>

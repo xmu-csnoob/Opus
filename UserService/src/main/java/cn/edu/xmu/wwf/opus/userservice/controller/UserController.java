@@ -36,6 +36,10 @@ public class UserController {
         int id= Integer.parseInt(TokenUtil.get(token));
         return userService.getUserInfo(id);
     }
+    @GetMapping("/user/{id}")
+    public ReturnObject getUserInfo(@PathVariable int id){
+        return userService.getUserInfo(id);
+    }
     @PostMapping("/user/avatar")
     //先上传再修改
     //user绑定imageId作为avatar

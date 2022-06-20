@@ -23,6 +23,8 @@
         <module>AlbumService</module>
         <module>CategoryService</module>
         <module>UserService</module>
+        <module>EvaluationService</module>
+        <module>CollectionService</module>
     </modules>
 
 
